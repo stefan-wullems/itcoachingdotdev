@@ -1,0 +1,121 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { AWSCertifications } from '@/components/AWSCertifications'
+
+export const article = {
+  author: 'Stefan Wullems',
+  date: '2024-03-08',
+  title: 'Should you get the AWS Certified Cloud Practitioner certification?',
+  tags: ['certification-roast'],
+  description:
+    'I just obtained the AWS Certified Cloud Practitioner certification, but the question is: should you?',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Welcome to Certification Roast. In this series, you’ll follow me as I collect certificates, speculate whether you should bother getting the certification as well, and give recommendations on how to effectively prepare for the certification exams.
+
+In this article we will be taking a look at the **[AWS Certified Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)** certification, which is the most foundational of a multitude of certifications that Amazon offers.
+
+<AWSCertifications highlighted="foundational-cloud-practitioner" />
+
+## Who Is This For?
+
+I’m a Web Career Coach which means that I will be looking at how useful these certificates are to progressing a Web career (this includes the entire stack, from frontend to backend, from deployment to security, from communication to working effectively in a team). 
+If you are a Web Engineer of some kind, you might want to read on. The recommendations and insights are custom tailored to you!
+
+## The AWS Certified Cloud Practitioner
+
+The AWS Certified Cloud Practitioner certification focuses on foundational knowledge of AWS. To be a bit more concrete, it goes relatively deep into the core of AWS, the things that you will almost certainly need, or at least want to be aware of when building your AWS architecture.
+
+It covers the basic building blocks like getting code to run in the cloud (EC2, Lambda), storing different kinds of data for different purposes and durations (S3, EBS, EFS and many database solutions), and the mechanisms to communicate securely and reliably between the components of your application (VPC’s, Subnets, ACL’s, Security Groups, SNS, SQS and more).
+
+Next to that you will take a tour of most of the more specialized services that AWS provides. Just enough to be aware they exist, and know when to reach for them if necessary, without drowning you in the details.
+
+It’s important to know that this certification just focuses on the concepts and doesn’t require you to know how to provision your architecture (although it will make it much easier to do this because you’ll actually understand the heaps of configuration that AWS offers).
+
+After getting this certification you will be able to:
+
+✅ have informed discussions about the AWS with teammates
+
+✅ make sense of the AWS architecture at your company
+
+✅ identify and suggest AWS solutions to problems your team is facing
+
+✅ teach teammates that are yet unfamiliar with AWS
+
+## Should you get certified?
+
+Learning about the possibilities that the cloud offers is a must for every Web Engineer that wants to have a successful career. Most modern companies deploy their applications to the cloud, whether it’s cloud service providers (CSPs) like AWS, Google Cloud, Azure, or cloud platforms like Vercel or Netlify. Even if you’re part of a team that doesn’t use the cloud, it’s useful to be aware of your options, and having this expertise can be a great way to discover potential improvements.
+
+Getting this certification isn’t a huge, but definitely a non-trivial commitment. $90 per attempt and I recommend around 15-25 hours of study time, which equates to 1-2 weeks studying for ~2 hours a day. 
+
+Still, I believe it is worth it for most people. Becoming more knowledgeable and skilled with tools relevant to your job will pay off generously throughout your career. Even if you don’t end up using it yourself, it will help you understand the people who do, and by seeing alternatives, you will better understand the tradeoffs you’re making. This broad understanding, not just of what you *are* doing, but also of what you could be doing, is one of the hallmarks of a Senior.
+
+Next to the knowledge you’ll gain while preparing for the certification, the certification itself is a great way to increase the chances of being hired, to negotiate a raise or promotion, and to earn respect from your peers. It communicates to others that you have skills and knowledge in an area without having to painstakingly prove it to them, and it proves you are disciplined enough to commit to, and finish something that takes effort to achieve.
+
+I recommend this certification to everyone working in Web, only excluding Engineers who already deeply understand the cloud. This certification might be especially interesting for you if:
+
+- You work for a company that already uses AWS: It helps you better understand that company.
+- You work for a small company: There is still a lot of low hanging fruit when it comes to operations and deployment and firm knowledge of AWS will help you take advantage of that.
+- You are interested in any of the following specializations: Cloud Engineering, Security, Microservices, DevOps, Platform Engineering or Site Reliability Engineering.
+
+## How To Study?
+
+Most courses are probably good enough, but some are definitely better than others. I want you to have the smoothest experience possible, so after I got my certification, I went back to review some of the available courses out there.
+
+### [**AWS Cloud Practitioner Essentials - AWS Skill Builder**](https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials)
+
+This is Amazon’s very own course, and it’s the one I used to study for the exam. 
+
+I think the quality of the course was quite high: they used great analogies, good teachers, nice visuals and interactive quizzes, and everything the course covers is relevant to the exam. 
+
+It only covers theory, and no practice, which I think is too bad. Technically you only need theory to pass the exam, but practice helps to solidify your understanding of these concepts and makes it so that you can actually start to apply them at work.
+
+I also found that the course had a bit of a salesy vibe at some times. E.g. clearly nudging you in the direction of AWS proprietary technology over open-source solutions and only talking about the “benefits”, while not always mentioning the necessary nuances.
+
+Although these previous points aren’t a dealbreaker, I can’t really recommend this course for one big reason: the theory it covers is simply not sufficient to reliably pass the exam. 
+
+After I aced the final quiz at end of this course, I went into the exam with misinformed confidence. It didn’t take many questions before I realized I wasn’t as prepared as I thought, and I had to resort to guessing and deducing in order to pass my exam. Not fun…
+
+I explored some other courses on the AWS Skill Builder that can probably supplement the gaps, but there will be some overlap with what you already know, which is a bit of a waste of time, and you might have to sign up for a monthly subscription to the AWS Skill Builder which will cost you $30 a month.
+
+All power to you if that’s what you want to go for. I recommend checking out [AWS Cloud Quest](https://aws.amazon.com/training/digital/aws-cloud-quest/), a gamified way of learning how to use the AWS Management Console. A bit cringe, but also a bit interesting. 
+
+I’d rather recommend a single course that covers everything you need to know from start-to-end though, so let’s continue.
+
+### **[Ultimate AWS Certified Cloud Practitioner CLF-C02 by Stephane Marek](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/?couponCode=2021PM20) : TODO Affiliate Marketing Link**
+
+This is my most recommended course. 
+
+It isn’t a surprise that the production quality can’t top the quality of a multi-billion dollar company, but I’d say it’s a close #2, with a steady pacing, clear diagrams and explanations, pleasant instructor, quizzes at the end of each module, and overall polish.
+
+What this course provides that the AWS Cloud Practitioner Essentials doesn’t is completeness, meaning you can follow it start-to-end and you’ll have covered everything you need to know to be successful in the exam. Next to that it includes hands-on experiments in the AWS Management Console to help illustrate the theory that’s covered. Finally it ends off with a full-blown practice-exam including 65 questions that are actually comparable to the real exam.
+
+I like this course because it doesn’t only teach you the knowledge required to pass the exam and get your certification, it also teaches you the skills to actually start applying this knowledge, which is arguably more important. After this course you can actually start solving real world problems with AWS.
+
+### **[AWS Certified Cloud Practitioner Certification Course (CLF-C02) by Andrew Brown](https://www.youtube.com/watch?v=NhDYbskXRgc)** 
+
+This is a free alternative to Stephane’s course. It is also complete, meaning it covers everything you need to know, includes hands-on experiments and includes a 65 question practice exam. 
+
+Andrew includes some of his own interpretations, experiences and fun facts to enrich the main content to make for a more authentic mix. He also offers a paid tier that adds quizzes, flashcards and a cool validation feature that checks your AWS account to see whether you’ve followed the steps of the hands-on correctly.
+
+Although I personally will be going for Stephane’s courses to study for more advanced certifications, Andrew’s course is a great option.
+
+## Additional Study Tips
+
+**Complete at least one practice exam**: Make sure that when you walk into that exam room, you know what to expect. You can do this by completing at least one practice exam. It'll give you a sense of the kinds of questions you can expect and the overall difficulty of the exam.
+
+**Book your exam in advance**: Book the exam before you start studying. The easiest way to stay motivated is a hard deadline that is coming closer everyday. I recommend you book two weeks in advance, which will put your daily study time at about 1-2 hours. If you really want to push yourself you can knock it out in a weekend. It all depends on the time you have available and your current level of knowledge.
+
+## How will this help me be a better coach?
+
+Less important than your decision, but perhaps still interesting. How does this certification help me help you achieve your career goals? 
+
+I live by the principle that I can provide good guidance on problems I’ve helped others go through, but I can provide great guidance on problems I’ve experienced for myself. Because the cloud is such an integral part to the development cycle, and because it doesn’t seem to be leaving us anytime soon, I decided to immerse myself, explore and make mistakes so that I can help you reach and surpass the point I’m at more quickly and easily.
+
+If you are interested in having me help you make progress in your Web Career, you can reach out to me blablabla
