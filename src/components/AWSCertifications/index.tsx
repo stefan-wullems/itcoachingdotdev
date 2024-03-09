@@ -87,6 +87,8 @@ const ROWS = [
   },
 ]
 
+const UNLOCKED = ['foundational-cloud-practitioner']
+
 export const AWSCertifications = ({
   highlighted,
 }: {
@@ -100,14 +102,23 @@ export const AWSCertifications = ({
             key={row.id}
             className={clsx(
               row.className,
-              highlighted && highlighted !== row.id
-                ? 'opacity-50 dark:opacity-20'
-                : '',
-              'min-w-30 min-h-16 sm:h-32 sm:w-40',
+              !UNLOCKED.includes(row.id) ? 'opacity-50 dark:opacity-20' : '',
+              ' min-w-30 sm:w-34 relative min-h-16 sm:h-32',
             )}
           >
-            <div className="">
-              <Image src={row.src} alt={row.alt} />
+            <div className="relative">
+              <div
+                className={clsx(
+                  'absolute inset-0',
+                  highlighted &&
+                    highlighted === row.id &&
+                    'rounded-full border border-l-0 border-t-0  border-white border-opacity-40  bg-gradient-to-br  from-zinc-950 from-50% to-emerald-900 ',
+                )}
+              ></div>
+
+              <div className="relative p-2">
+                <Image src={row.src} alt={row.alt} />
+              </div>
             </div>
           </div>
         ))}
