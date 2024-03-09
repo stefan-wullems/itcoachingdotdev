@@ -47,11 +47,7 @@ export const metadata: Metadata = {
     'All of my long-form thoughts on tech, business, communication, and more, collected in chronological order.',
 }
 
-export default async function ArticlesIndex({
-  searchParams,
-}: {
-  searchParams: any
-}) {
+export default async function ArticlesIndex({}: {}) {
   let articles = await getAllArticles()
 
   return (

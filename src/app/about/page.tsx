@@ -84,10 +84,10 @@ export default function About() {
             </p>
             <p>
               After 7 years of being focused on the tech side, I realised that I
-              could make myself much more valuable by lifting up other people
-              rather than going further down the path of engineering. I started
-              following the management learning path that my employer was
-              offering at the time, went back to school to start studying
+              would find it most fulfilling if I focused my efforts on lifting
+              up other people rather than only worrying about my own craft. I
+              started following the management learning path that my employer
+              was offering at the time, went back to school to start studying
               psychology, got certified as a coach and finally quit my job to
               start my own coaching practice.
             </p>
@@ -95,6 +95,23 @@ export default function About() {
               Today I’m a Web Career Coach, where I specifically help Web
               Developers level up their career by helping them improve on the
               three levers of value. Tech, Organization and Self.
+            </p>
+            <p>
+              If any of this speaks to you, feel free to send me{' '}
+              <Link
+                href="mailto:stefan@stefanwullemscoaching.com"
+                className="font-medium text-emerald-500 underline"
+              >
+                an email
+              </Link>{' '}
+              or{' '}
+              <Link
+                href="https://www.linkedin.com/in/stefan-wullems-572854242/"
+                className="font-medium text-emerald-500 underline"
+              >
+                a DM on Linkedin
+              </Link>
+              !
             </p>
           </div>
         </div>
