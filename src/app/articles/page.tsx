@@ -52,7 +52,7 @@ export default async function ArticlesIndex({
 }: {
   searchParams: any
 }) {
-  let articles = await getAllArticles(searchParams.tag)
+  let articles = await getAllArticles()
 
   return (
     <SimpleLayout

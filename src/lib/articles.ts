@@ -26,14 +26,12 @@ async function importArticle(
   }
 }
 
-export async function getAllArticles(tag?: string) {
+export async function getAllArticles() {
   let articleFilenames = await glob('*/page.mdx', {
     cwd: './src/app/articles',
   })
 
   let articles = await Promise.all(articleFilenames.map(importArticle))
 
-  return articles
-    .sort((a, z) => +new Date(z.date) - +new Date(a.date))
-    .filter((article) => !tag || article.tags.includes(tag))
+  return articles.sort((a, z) => +new Date(z.date) - +new Date(a.date))
 }
