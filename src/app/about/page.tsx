@@ -45,7 +45,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Stefan Wullems. I live in Amsterdam and I help people level up their web career.',
+    'I’m Stefan Wullems. I live in Amsterdam and help people level up their web careers.',
 }
 
 export default function About() {
@@ -64,52 +64,51 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Stefan Wullems. I live in Amsterdam and I help people level up
-            their web career.
+            I’m Stefan Wullems. I live in Amsterdam and help people level up
+            their web careers.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
               I loved building things and solving problems for as long as I can
-              remember. School was never my thing. Instead I used to skip class
-              to write games, read books about physics and workout at my local
-              gym.
+              remember. School was never my thing. Instead, I used to skip class
+              to write games, read physics books, and work out at my local gym.
             </p>
             <p>
               The only thing I love more than learning about tech is helping
               others. I was a personal trainer for 2 years before I got into
-              tech, and as a programmer I loved to help my colleagues and work
+              tech, and as a programmer, I loved to help my colleagues and work
               directly with customers. Of all of the code I’ve written, the most
-              rewarding hasn’t been the most difficult problem, but the code
+              rewarding hasn’t been the most challenging problem, but the code
               that made the lives of my colleagues or the user a bit better.
             </p>
             <p>
-              After 7 years of being focused on the tech side, I realised that I
-              would find it most fulfilling if I focused my efforts on lifting
-              up other people rather than only worrying about my own craft. I
-              started following the management learning path that my employer
-              was offering at the time, went back to school to start studying
-              psychology, got certified as a coach and finally quit my job to
-              start my own coaching practice.
+              After 7 years of being focused on the tech side, I realized that I
+              would find it most fulfilling if I concentrated my efforts on
+              lifting up other people rather than only worrying about my own
+              craft. I started following the management learning path that my
+              employer was offering at the time, went back to school to start
+              studying psychology, got certified as a coach, and finally quit my
+              job to start my own coaching practice.
             </p>
             <p>
-              Today I’m a Web Career Coach, where I specifically help Web
-              Developers level up their career by helping them improve on the
-              three levers of value. Tech, Organization and Self.
+              Today, I’m a Web Career Coach. I specifically help Web Developers
+              level up their careers by improving their skills in the three
+              levers of value: Tech, Organization, and Self.
             </p>
             <p>
-              If any of this speaks to you, feel free to send me{' '}
+              If any of this speaks to you, feel free to{' '}
               <Link
                 href="mailto:stefan@stefanwullemscoaching.com"
                 className="font-medium text-emerald-500 underline"
               >
-                an email
+                email me
               </Link>{' '}
               or{' '}
               <Link
                 href="https://www.linkedin.com/in/stefan-wullems-572854242/"
                 className="font-medium text-emerald-500 underline"
               >
-                a DM on Linkedin
+                DM me on Linkedin
               </Link>
               !
             </p>
