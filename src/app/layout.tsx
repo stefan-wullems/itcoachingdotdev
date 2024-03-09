@@ -8,7 +8,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Stefan Wullems',
-    default: 'Stefan Wullems - Web Career Coach, Software Engineer, and gymrat',
+    default: 'Stefan Wullems - Web Career Coach, Software Engineer, and Gymrat',
   },
   description:
     'I’m Stefan, a Web Career Coach and entrepreneur based in Amsterdam. I’m the founder of Stefan Wullems Coaching, where I help Web Developers level up in their career.',

@@ -3,6 +3,7 @@
 import { createContext, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import { ThemeProvider, useTheme } from 'next-themes'
+import { Analytics } from '@vercel/analytics/react'
 
 function usePrevious<T>(value: T) {
   let ref = useRef<T>()
@@ -49,6 +50,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         {/* <ThemeWatcher /> */}
         {children}
+        <Analytics />
       </ThemeProvider>
     </AppContext.Provider>
   )
