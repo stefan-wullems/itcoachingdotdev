@@ -19,6 +19,7 @@ export const metadata = {
     type: 'article',
     url: `https://stefanwullemscoaching.com/articles/aws-certified-cloud-practitioner`,
     authors: [article.author],
+    tags: article.tags.join(', '),
     images: [
       {
         url: `https://stefanwullemscoaching.com/aws-certified-cloud-practitioner.png`,
@@ -26,6 +27,7 @@ export const metadata = {
         width: 1334,
         height: 1146,
         alt: article.title,
+        type: 'image/png'
       },
     ],
   },
