@@ -18,6 +18,9 @@ import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
+import barbell from '@/images/photos/barbell.jpg'
+import dumbbell2 from '@/images/photos/dumbbell2.jpeg'
+
 import amsterdam from '@/images/photos/amsterdam.jpg'
 
 import datacenter from '@/images/photos/datacenter.jpg'
@@ -248,7 +251,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[dumbbels, image3, amsterdam, datacenter, image5].map(
+        {[barbell, image3, amsterdam, datacenter, image5].map(
           (image, imageIndex) => (
             <div
               key={image.src}
