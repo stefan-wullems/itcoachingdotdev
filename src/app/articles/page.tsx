@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import { Badge } from '@/components/Badge'
+import { Tag } from '@/components/Badge'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -24,9 +24,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
         <Card.Description>
           {article.description}
           {article.tags.map((tag) => (
-            <Badge key={tag} href={'/articles?tag=' + tag}>
-              {tag}
-            </Badge>
+            <Tag key={tag}>{tag}</Tag>
           ))}
         </Card.Description>
         <Card.Cta>Read article</Card.Cta>
@@ -46,7 +44,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
 export const metadata: Metadata = {
   title: 'Articles',
   description:
-    'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.',
+    'All of my long-form thoughts on tech, business, communication, and more, collected in chronological order.',
 }
 
 export default async function ArticlesIndex({

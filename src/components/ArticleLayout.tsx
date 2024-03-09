@@ -8,7 +8,7 @@ import { Container } from '@/components/Container'
 import { Prose } from '@/components/Prose'
 import { type ArticleWithSlug } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
-import { Badge } from './Badge'
+import { Tag } from './Badge'
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -61,7 +61,7 @@ export function ArticleLayout({
               </time>
               <div className="mt-4 flex flex-wrap gap-2">
                 {article.tags.map((tag) => (
-                  <Badge key={tag}>{tag}</Badge>
+                  <Tag key={tag}>{tag}</Tag>
                 ))}
               </div>
             </header>
