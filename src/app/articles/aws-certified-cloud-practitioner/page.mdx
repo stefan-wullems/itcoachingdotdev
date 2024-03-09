@@ -13,6 +13,13 @@ export const article = {
 export const metadata = {
   title: article.title,
   description: article.description,
+  openGraph: {
+    title: article.title,
+    description: article.description,
+    type: 'article',
+    url: `https://stefanwullemscoaching.com/articles/aws-certified-cloud-practitioner`,
+    authors: [article.author],
+  },
 }
 
 export default (props) => <ArticleLayout article={article} {...props} />
