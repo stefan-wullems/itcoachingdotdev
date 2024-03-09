@@ -71,15 +71,16 @@ export default function About() {
             <p>
               I loved building things and solving problems for as long as I can
               remember. School was never my thing. Instead, I used to skip class
-              to write games, read physics books, and work out at my local gym.
+              to write games, read physics books, and hit the gym.
             </p>
             <p>
-              The only thing I love more than learning about tech is helping
-              others. I was a personal trainer for 2 years before I got into
-              tech, and as a programmer, I loved to help my colleagues and work
-              directly with customers. Of all of the code I’ve written, the most
-              rewarding hasn’t been the most challenging problem, but the code
-              that made the lives of my colleagues or the user a bit better.
+              I love learning about tech and I’m equally enthusiastic about
+              helping others. I was a personal trainer for 2 years before I got
+              into tech, and as a programmer, I loved to help my colleagues and
+              work directly with customers. Of all of the code I’ve written, the
+              most rewarding hasn’t been the most challenging problem, but the
+              code that made the lives of my colleagues or the user a bit
+              better.
             </p>
             <p>
               After 7 years of being focused on the tech side, I realized that I
