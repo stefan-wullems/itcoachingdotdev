@@ -96,7 +96,7 @@ export const AWSCertifications = ({
 }) => {
   return (
     <div className="relative isolate">
-      <div className="relative grid grid-cols-8 gap-x-4 rounded-2xl bg-zinc-950 bg-gradient-to-tl from-transparent via-transparent to-emerald-900 px-5 pb-12 pt-5">
+      <div className="relative grid grid-cols-8 gap-x-10 rounded-2xl bg-zinc-950 bg-gradient-to-tl from-transparent via-transparent to-emerald-900 px-5 pb-12 pt-5">
         {ROWS.map((row) => (
           <div key={row.id} className={clsx(row.className, 'relative')}>
             <div className="relative">
