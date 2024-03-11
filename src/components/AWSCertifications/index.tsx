@@ -96,27 +96,41 @@ export const AWSCertifications = ({
 }) => {
   return (
     <div className="relative isolate">
-      <div className="relative grid grid-cols-8 rounded-2xl bg-zinc-950 bg-gradient-to-tl from-transparent via-transparent to-emerald-900 px-5 pb-12 pt-5">
+      <div className="relative grid grid-cols-8 gap-x-4 rounded-2xl bg-zinc-950 bg-gradient-to-tl from-transparent via-transparent to-emerald-900 px-5 pb-12 pt-5">
         {ROWS.map((row) => (
-          <div
-            key={row.id}
-            className={clsx(
-              row.className,
-              !UNLOCKED.includes(row.id) ? 'opacity-50 dark:opacity-20' : '',
-              ' min-w-30 sm:w-34 relative min-h-16 sm:h-32',
-            )}
-          >
+          <div key={row.id} className={clsx(row.className, 'relative')}>
             <div className="relative">
+              {row.id === highlighted && (
+                <div
+                  className={clsx(
+                    'animate-ping-xs absolute inset-0',
+                    'rounded-full    border border-emerald-900  ',
+                  )}
+                ></div>
+              )}
+              {row.id === highlighted && (
+                <div
+                  className={clsx(
+                    'animate-ping-xs-offset absolute inset-0',
+                    'rounded-full    border border-emerald-900  ',
+                  )}
+                ></div>
+              )}
               <div
                 className={clsx(
                   'absolute inset-0',
-                  highlighted &&
-                    highlighted === row.id &&
-                    'rounded-full border border-l-0 border-t-0  border-white border-opacity-40  bg-gradient-to-br  from-zinc-950 from-50% to-emerald-900 ',
+                  'rounded-full border border-l-0 border-t-0  border-emerald-900 border-opacity-40  bg-gradient-to-br  from-zinc-950 from-70% to-emerald-900 ',
                 )}
               ></div>
 
-              <div className="relative p-2">
+              <div
+                className={clsx(
+                  'relative p-1 sm:p-2',
+                  !UNLOCKED.includes(row.id)
+                    ? 'brightness-50 dark:brightness-[0.2]'
+                    : '',
+                )}
+              >
                 <Image src={row.src} alt={row.alt} />
               </div>
             </div>

@@ -8,6 +8,13 @@ export default {
   darkMode: 'selector',
   plugins: [typographyPlugin],
   theme: {
+    extend: {
+      animation: {
+        'ping-xs': 'ping-xs 2s cubic-bezier(0, 0, 0.2, 0.1) infinite',
+        'ping-xs-offset':
+          'ping-xs-offset 2s cubic-bezier(0, 0, 0.2, 0.1) infinite',
+      },
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
