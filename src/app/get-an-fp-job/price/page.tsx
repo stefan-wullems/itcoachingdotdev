@@ -19,12 +19,12 @@ export default function HeroLanding() {
           Program
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Before we get into pricing, I first want to share that I won't be
-          doing this program for very long. Probaly only one cohort with 6
-          spots. Let's call it a final ode to FP before I hang up my programming
-          hat and move fully into coaching. So, just so you are aware, this
-          isn't an offer that you're likely to encounter ever again. Choose
-          wisely.
+          Before we get into pricing, I first want to share that I won&rsquo;t
+          be doing this program for very long. Probaly only one cohort with 6
+          spots. Let&rsquo;s call it a final ode to FP before I hang up my
+          programming hat and move fully into coaching. So, just so you are
+          aware, this isn&rsquo;t an offer that you&rsquo;re likely to encounter
+          ever again. Choose wisely.
           <h2 className="mt-4 text-xl font-medium text-zinc-800 dark:text-zinc-300">
             Hands-On <span className="text-emerald-500">Get Good</span> Training
             Package
@@ -105,8 +105,8 @@ export default function HeroLanding() {
             </div>
             <div>
               I will apply to jobs in your name based on your preference
-              (including cover letter, custom tailored to you and the role we're
-              applying for)
+              (including cover letter, custom tailored to you and the role
+              we&rsquo;re applying for)
             </div>
           </li>
           <li className="flex">
@@ -138,7 +138,7 @@ export default function HeroLanding() {
             href="/get-an-fp-job/contact-details"
             className="text-emerald-500 hover:underline"
           >
-            Cool, I'm still interested! &rarr;
+            Cool, I&rsquo;m still interested! &rarr;
           </a>
         </p>
         <p className="pt-6 dark:text-zinc-500">

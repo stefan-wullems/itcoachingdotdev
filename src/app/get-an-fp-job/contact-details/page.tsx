@@ -18,9 +18,9 @@ export default function HeroLanding() {
           Program
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Awesome, I'm glad to know you're committed. If you want to continue,
-          just enter your email address and I reach out to you in order to
-          schedule a quick zoom meeting to see if we're a match.
+          Awesome, I&rsquo;m glad to know you&rsquo;re committed. If you want to
+          continue, just enter your email address and I reach out to you in
+          order to schedule a quick zoom meeting to see if we&rsquo;re a match.
         </p>
         <NewsletterInput />
       </div>

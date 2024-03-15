@@ -25,10 +25,10 @@ export default function HeroLanding() {
           learn.
           <br />
           <br />
-          That doesn't mean that experience won't help a bunch. Because the
-          relatively low supply of these jobs, you will have competition. If you
-          are the only one with proven experience, you'll have a leg up on your
-          competition. Makes sense right?
+          That doesn&rsquo;t mean that experience won&rsquo;t help a bunch.
+          Because the relatively low supply of these jobs, you will have
+          competition. If you are the only one with proven experience,
+          you&rsquo;ll have a leg up on your competition. Makes sense right?
           <br />
           <br />I can help you with this too:
         </p>
@@ -63,7 +63,7 @@ export default function HeroLanding() {
             href="/get-an-fp-job/price"
             className="text-emerald-500 hover:underline"
           >
-            Allright, I'm interested! But what's the price? &rarr;
+            Allright, I&rsquo;m interested! But what&rsquo;s the price? &rarr;
           </a>
         </p>
       </div>

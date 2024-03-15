@@ -17,18 +17,19 @@ export default function HeroLanding() {
           45 Days {`"Get an FP Job"`} Program
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          With all these benefits, its strange that functional programming isn't
-          more popular, which means that getting a job in functional programming
-          is a bit more difficult than jobs in more industry standard languages.
+          With all these benefits, its strange that functional programming
+          isn&rsquo;t more popular, which means that getting a job in functional
+          programming is a bit more difficult than jobs in more industry
+          standard languages.
           <br />
           <br />
-          It isn't impossible though. I personally have been hired as a
+          It isn&rsquo;t impossible though. I personally have been hired as a
           functional programmer at two different companies. I know what it takes
           to succeed and I can help you get there too.
           <br />
           <br />
-          I'll let you decide what programming language you'd like to work with
-          and I'll:
+          I&rsquo;ll let you decide what programming language you&rsquo;d like
+          to work with and I&rsquo;ll:
         </p>
         <ul className="mt-6 list-none  pl-6 text-base text-zinc-600 dark:text-zinc-400">
           <li className="flex">
@@ -55,7 +56,8 @@ export default function HeroLanding() {
             </div>
             <div>
               Apply to jobs for you based on your preference (including cover
-              letter, custom tailored to you and the role we're applying for)
+              letter, custom tailored to you and the role we&rsquo;re applying
+              for)
             </div>
           </li>
           <li className="flex">
@@ -74,7 +76,7 @@ export default function HeroLanding() {
             href="/get-an-fp-job/get-skilled"
             className="text-emerald-500 hover:underline"
           >
-            That's cool, but I need experience right? &rarr;
+            That&rsquo;s cool, but I need experience right? &rarr;
           </a>
         </p>
       </div>
