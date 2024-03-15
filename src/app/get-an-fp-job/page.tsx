@@ -37,7 +37,7 @@ export default function HeroLanding() {
           <br />
           <br />
           <a
-            href="/fp-hero/get-hired"
+            href="/get-an-fp-job/get-hired"
             className="mt-10 text-emerald-500 hover:underline"
           >
             Interesting, tell me more &rarr;

@@ -135,7 +135,7 @@ export default function HeroLanding() {
           <br />
           <br />
           <a
-            href="/fp-hero/contact-details"
+            href="/get-an-fp-job/contact-details"
             className="text-emerald-500 hover:underline"
           >
             Cool, I'm still interested! &rarr;

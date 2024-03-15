@@ -59,8 +59,11 @@ export default function HeroLanding() {
           </li>
         </ul>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          <a href="/fp-hero/cost" className="text-emerald-500 hover:underline">
-            Allright, I'm interested! But what will it cost? &rarr;
+          <a
+            href="/get-an-fp-job/price"
+            className="text-emerald-500 hover:underline"
+          >
+            Allright, I'm interested! But what's the price? &rarr;
           </a>
         </p>
       </div>

@@ -71,7 +71,7 @@ export default function HeroLanding() {
         <p>
           <br />
           <a
-            href="/fp-hero/get-skilled"
+            href="/get-an-fp-job/get-skilled"
             className="text-emerald-500 hover:underline"
           >
             That's cool, but I need experience right? &rarr;
