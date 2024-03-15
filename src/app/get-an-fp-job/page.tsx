@@ -4,7 +4,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { Container } from '@/components/Container'
 
 export const metadata: Metadata = {
-  title: 'Thank you',
+  title: '45 Days "Get an FP Job" Program',
   description: 'Thanks for expressing interest, I will reach out ASAP.',
 }
 

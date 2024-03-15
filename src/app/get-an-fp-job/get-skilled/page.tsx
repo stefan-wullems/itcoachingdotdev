@@ -5,8 +5,8 @@ import { Container } from '@/components/Container'
 import { CheckIcon } from '@heroicons/react/20/solid'
 
 export const metadata: Metadata = {
-  title: 'Thank you',
-  description: 'Thanks for expressing interest, I will reach out ASAP.',
+  title: '% - Get Skilled',
+  description: 'How the Get an FP job program will help you get skilled.',
 }
 
 export default function HeroLanding() {

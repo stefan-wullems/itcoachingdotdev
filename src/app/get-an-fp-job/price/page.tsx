@@ -3,10 +3,11 @@ import { type Metadata } from 'next'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Container } from '@/components/Container'
 import { CheckIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Thank you',
-  description: 'Thanks for expressing interest, I will reach out ASAP.',
+  title: '% - Price',
+  description: 'The price of the 45 Day "Get an FP Job" Program',
 }
 
 export default function HeroLanding() {
@@ -18,7 +19,13 @@ export default function HeroLanding() {
           Program
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          <h2 className="text-xl font-medium text-zinc-800 dark:text-zinc-300">
+          Before we get into pricing, I first want to share that I won't be
+          doing this program for very long. Probaly only one cohort with 6
+          spots. Let's call it a final ode to FP before I hang up my programming
+          hat and move fully into coaching. So, just so you are aware, this
+          isn't an offer that you're likely to encounter ever again. Choose
+          wisely.
+          <h2 className="mt-4 text-xl font-medium text-zinc-800 dark:text-zinc-300">
             Hands-On <span className="text-emerald-500">Get Good</span> Training
             Package
           </h2>
@@ -121,17 +128,25 @@ export default function HeroLanding() {
         </p>
         <p className="mt-6 pl-4 text-base text-zinc-600 dark:text-zinc-400">
           Total <span className="line-through dark:text-zinc-200">€2200</span>{' '}
-          <span className="dark:text-zinc-200">€1200</span> +{' '}
+          <span className="dark:text-zinc-200">€1200 upfront</span> +{' '}
           <span className="dark:text-zinc-200">
             €250/month for 12 months* **
           </span>
+          <br />
+          <br />
+          <a
+            href="/fp-hero/contact-details"
+            className="text-emerald-500 hover:underline"
+          >
+            Cool, I'm still interested! &rarr;
+          </a>
         </p>
         <p className="pt-6 dark:text-zinc-500">
-          <span className="pl-4 dark:text-zinc-500">
+          <span className="pl-4 text-zinc-500 dark:text-zinc-500">
             *Only pay after you get the job + no fix, no cost guarantee
           </span>
           <br />
-          <span className="pl-4 dark:text-zinc-500">
+          <span className="pl-4 text-zinc-500 dark:text-zinc-500">
             **Just FYI, recruiters usually take a 15-25% commission
           </span>
         </p>
