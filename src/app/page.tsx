@@ -251,24 +251,28 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[barbell, image3, amsterdam, datacenter, image5].map(
-          (image, imageIndex) => (
-            <div
-              key={image.src}
-              className={clsx(
-                'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-                rotations[imageIndex % rotations.length],
-              )}
-            >
-              <Image
-                src={image}
-                alt=""
-                sizes="(min-width: 640px) 18rem, 11rem"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            </div>
-          ),
-        )}
+        {[
+          { image: barbell, alt: 'Barbell' },
+          { image: amsterdam, alt: 'Amsterdam' },
+          { image: image3, alt: 'Do more' },
+          { image: datacenter, alt: 'Datacenter' },
+          { image: image5, alt: 'Achieve your tech goals' },
+        ].map((image, imageIndex) => (
+          <div
+            key={image.image.src}
+            className={clsx(
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+              rotations[imageIndex % rotations.length],
+            )}
+          >
+            <Image
+              src={image.image}
+              alt={image.alt}
+              sizes="(min-width: 640px) 18rem, 11rem"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+        ))}
       </div>
     </div>
   )
@@ -282,12 +286,47 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Web Career Coach, Entrepreneur, Software Engineer, Gymrat.
+            Stefan Wullems - Tech Career Coach
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Stefan, a Web Career Coach and entrepreneur based in Amsterdam.
-            I’m the founder of Stefan Wullems Coaching, where I help web
-            developers up their game and level up their careers.
+            I’m Stefan, an Online Tech Career Coach and entrepreneur based in
+            Amsterdam.
+            <br />
+            <br />
+            As a Tech Career Coach, I help Web Engineers reach common career
+            goals, like increasing their software engineering level, negotiating
+            a raise, or integrating their interests into their job.
+            <br />
+            <br />
+            To achieve these goals, we will use <strong>two main levers</strong>
+            :
+          </p>
+          <ol className="mt-6 list-inside list-decimal space-y-6 text-base text-zinc-600 dark:text-zinc-400">
+            <li>
+              <strong>Deliver Business Value:</strong>{' '}
+              <p className="ml-4 inline-block">
+                Identify your business or team’s needs and use them as leverage
+                to negotiate. For example, use tech training to build
+                high-impact skills rather than commodity skills, formulate a
+                growth plan to negotiate a raise or negotiate a promotion, and
+                build a business case for a tool you are interested in.
+              </p>
+            </li>
+            <li>
+              <strong>IT Job Hunting:</strong>{' '}
+              <p className="ml-4">
+                Your current job might not allow you to integrate your
+                interests, or your employer might not be able to pay the amount
+                you want. In this case, we will build an optimized tech resume
+                and portfolio, discuss how to prepare for a tech interview, and
+                start looking for employers that better fit your requirements.
+              </p>
+            </li>
+          </ol>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            If you want to take ownership of your career, don’t hesitate to
+            contact me. I’d be happy to discuss how I can help you achieve your
+            goals. Let’s work together to build the career you want!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
