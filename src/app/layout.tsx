@@ -14,6 +14,21 @@ export const metadata: Metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
+  openGraph: {
+    title: 'Tech Career Coach - Stefan Wullems',
+    description:
+      'I’m Stefan, an Online Tech Career Coach who helps Web Developers reach career goals.',
+    type: 'website',
+    url: process.env.NEXT_PUBLIC_SITE_URL,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/home-og-linkedin.png`,
+        width: 2400,
+        height: 1254,
+        alt: 'Tech Career Coach - Stefan Wullems',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({

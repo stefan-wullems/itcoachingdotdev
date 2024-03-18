@@ -289,44 +289,20 @@ export default async function Home() {
             Stefan Wullems - Tech Career Coach
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Stefan, an Online Tech Career Coach and entrepreneur based in
-            Amsterdam.
+            Hey, I’m Stefan Wullems.
             <br />
             <br />
-            As a Tech Career Coach, I help Web Engineers reach common career
-            goals, like increasing their software engineering level, negotiating
-            a raise, or integrating their interests into their job.
+            I help Web Engineers like you reach common career goals, like
+            increasing your software engineering level, negotiating a raise, or
+            integrating your interests into your job.
             <br />
             <br />
-            To achieve these goals, we will use <strong>two main levers</strong>
-            :
-          </p>
-          <ol className="mt-6 list-inside list-decimal space-y-6 text-base text-zinc-600 dark:text-zinc-400">
-            <li>
-              <strong>Deliver Business Value:</strong>{' '}
-              <p className="ml-4 inline-block">
-                Identify your business or team’s needs and use them as leverage
-                to negotiate. For example, use tech training to build
-                high-impact skills rather than commodity skills, formulate a
-                growth plan to negotiate a raise or negotiate a promotion, and
-                build a business case for a tool you are interested in.
-              </p>
-            </li>
-            <li>
-              <strong>IT Job Hunting:</strong>{' '}
-              <p className="ml-4">
-                Your current job might not allow you to integrate your
-                interests, or your employer might not be able to pay the amount
-                you want. In this case, we will build an optimized tech resume
-                and portfolio, discuss how to prepare for a tech interview, and
-                start looking for employers that better fit your requirements.
-              </p>
-            </li>
-          </ol>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            If you want to take ownership of your career, don’t hesitate to
-            contact me. I’d be happy to discuss how I can help you achieve your
-            goals. Let’s work together to build the career you want!
+            I’m an Online Tech Career Coach and entrepreneur based in Amsterdam,
+            and I have 7 years of experience in software development.
+            <br />
+            <br />
+            If you want to take ownership of your career, consider the Web Dev
+            Rocket program. Let’s work together on building the career you want!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
