@@ -6,12 +6,9 @@ import { Layout } from '@/components/Layout'
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s - Stefan Wullems',
-    default: 'Stefan Wullems - Web Career Coach, Software Engineer, and Gymrat',
-  },
+  title: 'Tech Career Coach - Stefan Wullems',
   description:
-    'I’m Stefan, a Web Career Coach and entrepreneur based in Amsterdam. I’m the founder of Stefan Wullems Coaching, where I help Web Developers level up in their career.',
+    'I’m Stefan, an Online Tech Career Coach who helps Web Developers reach career goals.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
