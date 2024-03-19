@@ -83,9 +83,9 @@ function Hero() {
               <p className="font-gothic min-w-md mt-8 text-xl leading-8 text-gray-300 lg:max-w-none">
                 Take agency over your career.
               </p>
-              <ul className="font-gothic min-w-md text-md  mt-60 leading-8 text-gray-200 lg:max-w-none">
+              <ul className="font-gothic min-w-md text-md mt-60 leading-8 text-gray-200 lg:max-w-none">
                 {KEYWORDS.map((keyword) => (
-                  <li key={keyword} className="mr-8 inline-block">
+                  <li key={keyword} className="mx-4 inline-block">
                     {keyword}
                   </li>
                 ))}
@@ -241,8 +241,7 @@ const LEVERS = [
   },
   {
     title: 'Tools',
-    description:
-      'Are you using tools that you love, are interested in and do the job well?',
+    description: 'Are you using tools that you love? Do they do the job well?',
     icon: WrenchScrewdriverIcon,
     className: 'col-start-5 col-end-7',
   },
@@ -404,7 +403,7 @@ function AboutMe() {
             />
           </div>
         </div>
-        <div className="flex w-full justify-center px-40 py-10 xl:px-10">
+        <div className="flex w-full justify-center px-10 py-10 sm:px-40 xl:px-0 xl:py-40 xl:pl-10">
           <Image
             sizes="(min-width: 512px) 16rem, 10rem"
             className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
