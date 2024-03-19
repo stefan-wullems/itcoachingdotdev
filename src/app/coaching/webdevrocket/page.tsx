@@ -60,7 +60,7 @@ function Hero() {
           className="from-synthwave-900 absolute inset-0 bg-gradient-to-b to-transparent"
           aria-hidden="true"
         ></div>
-        <span className="opacity-20">
+        <span className="opacity-10">
           <div
             className="hero-background-animate from-synthwave-900 via-synthwave-700 to-synthwave-600 absolute inset-0 bg-gradient-to-r"
             aria-hidden="true"
