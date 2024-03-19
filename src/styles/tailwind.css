@@ -3,6 +3,30 @@
 @import './prism.css';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'BankGothic';
+  src: url('../../public/fonts/BankGothic/BankGothicmdbt.woff') format('woff');
+  font-weight: 100 900; /* Supports weights from 100 to 900 */
+}
+
+@font-face {
+  font-family: 'D-DIN-Bold';
+  src: url('../../public/fonts/D-Din/D-DIN-Bold.woff2') format('woff');
+  font-weight: 100 900; /* Supports weights from 100 to 900 */
+}
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../../public/fonts/D-Din/D-DIN.woff2') format('woff');
+  font-weight: 100 900; /* Supports weights from 100 to 900 */
+}
+
+:root {
+  --bank-gothic: 'BankGothic';
+  --d-din: 'D-DIN';
+  --d-din-bold: 'D-DIN-Bold';
+}
+
 @keyframes ping-xs {
   75%, 100% {
     transform: scale(1.2);
@@ -11,12 +35,34 @@
 }
 
 @keyframes ping-xs-offset {
-    50%, 75% {
-      transform: scale(1.2);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1.2);
-      opacity: 0;
-    }
+  50%, 75% {
+    transform: scale(1.2);
+    opacity: 0;
   }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+
+
+.hero-background-animate {
+  background-size: 400%;
+
+  -webkit-animation: GradientRoll 6s ease infinite;
+  -moz-animation: GradientRoll 6s ease infinite;
+  animation: GradientRoll 6s ease infinite;
+}
+
+@keyframes GradientRoll {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+

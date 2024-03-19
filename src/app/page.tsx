@@ -29,6 +29,7 @@ import image5 from '@/images/photos/cliff.jpg'
 import dumbbels from '@/images/photos/dumbbelss.png'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import { Layout } from '@/components/Layout'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -282,7 +283,7 @@ export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
 
   return (
-    <>
+    <Layout>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
@@ -332,6 +333,6 @@ export default async function Home() {
           </div>
         </div>
       </Container>
-    </>
+    </Layout>
   )
 }

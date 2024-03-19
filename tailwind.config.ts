@@ -13,6 +13,26 @@ export default {
         'ping-xs': 'ping-xs 2s cubic-bezier(0, 0, 0.2, 0.1) infinite',
         'ping-xs-offset':
           'ping-xs-offset 2s cubic-bezier(0, 0, 0.2, 0.1) infinite',
+
+        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'spin-slow': 'spin 10s linear infinite',
+        'bounce-slow': 'bounce 10s infinite',
+      },
+      colors: {
+        'synthwave-100': '#79fdfb',
+        'synthwave-200': '#5663bd',
+        'synthwave-300': '#5e3aa8',
+        'synthwave-400': '#771f95',
+        'synthwave-500': '#8e0f84',
+        'synthwave-600': '#620463',
+        'synthwave-700': '#4b055b',
+        'synthwave-800': '#2f0045',
+        'synthwave-900': '#090019',
+      },
+      fontFamily: {
+        gothic: ['var(--bank-gothic)'],
+        'd-din': ['var(--d-din)'],
+        'd-din-bold': ['var(--d-din-bold)'],
       },
     },
     fontSize: {

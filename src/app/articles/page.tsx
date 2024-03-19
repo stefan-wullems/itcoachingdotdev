@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 
 import { Card } from '@/components/Card'
-import { SimpleLayout } from '@/components/SimpleLayout'
+import { SimpleLayout } from '@/components/Layout'
 import { Tag } from '@/components/Badge'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
