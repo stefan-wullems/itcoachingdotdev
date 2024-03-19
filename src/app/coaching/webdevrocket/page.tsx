@@ -18,7 +18,7 @@ import clsx from 'clsx'
 import { LinkedInIcon } from '@/components/SocialIcons'
 import Link from 'next/link'
 
-export const program = {
+const program = {
   author: 'Stefan Wullems',
   date: '2024-03-19',
   title: 'The Web Dev Rocket',
