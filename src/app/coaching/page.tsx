@@ -1,31 +1,9 @@
 import { type Metadata } from 'next'
 
 import { SimpleLayout } from '@/components/Layout'
-import { ProgramWithSlug, getAllPrograms } from '@/lib/coaching'
 import { Card } from '@/components/Card'
 import Image from 'next/image'
 import landscaperocketcentered from './webdevrocket/images/lanscaperocketcentered.png'
-
-function Program({ program }: { program: ProgramWithSlug }) {
-  return (
-    <article className="md:grid md:grid-cols-4 md:items-baseline">
-      <Card className="md:col-span-3">
-        <Card.Title href={`/coaching/${program.slug}`}>
-          {program.title}
-        </Card.Title>
-        <Image
-          src={landscaperocketcentered}
-          alt="The Web Dev Rocket"
-          width={1200}
-          height={627}
-          className="mt-4"
-        />
-        <Card.Description>{program.description}</Card.Description>
-        <Card.Cta>View Program</Card.Cta>
-      </Card>
-    </article>
-  )
-}
 
 export const metadata: Metadata = {
   title: 'Coaching',
@@ -33,8 +11,6 @@ export const metadata: Metadata = {
 }
 
 export default async function Coaching({}: {}) {
-  let programs = await getAllPrograms()
-
   return (
     <SimpleLayout
       title="Coaching"
