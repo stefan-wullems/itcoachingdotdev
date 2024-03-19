@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React from 'react'
 
 function getCountdown(countDownDate: Date) {
@@ -34,7 +35,10 @@ export function CountdownTimer({ countDownDate }: { countDownDate: Date }) {
   }, [countDownDate])
 
   return (
-    <div className="bg-synthwave-900 font-gothic flex h-24 flex-col justify-center bg-opacity-80">
+    <div className="bg-synthwave-900 font-gothic relative flex h-24 flex-col justify-center bg-opacity-80">
+      <Link href={'/'} className="absolute inset-0 left-4 top-8 ">
+        &larr; Home
+      </Link>
       <p id="countdown" className="text-center text-2xl text-white">
         {countdown}
       </p>
