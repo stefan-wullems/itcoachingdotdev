@@ -369,13 +369,16 @@ function AboutMe() {
             are facing today.
             <br />
             <br />
-            I’ve built this program to guide you through performing those
-            actions that move you further away from the nightmare job and
-            towards the dream job.
+            I’ve built this program to guide you through those actions that move
+            you further away from the nightmare job and closer towards the dream
+            job.
             <br />
-            <br />I have carefully crafted step-by-step systems, strategies, and
-            resources to help you improve on The 6 Factors. I will continue
+            <br />I have carefully crafted step-by-step systems, checklists, and
+            templates to help you improve on The 7 Factors. I will continue
             adding more for the foreseeable future.
+            <br />
+            <br />
+            Some examples:
           </p>
           <ul className="font-d-din mt-6 list-inside list-disc text-lg leading-8 text-gray-300">
             <li>
