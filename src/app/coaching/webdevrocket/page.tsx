@@ -15,6 +15,8 @@ import {
   WrenchScrewdriverIcon,
 } from '@heroicons/react/20/solid'
 import clsx from 'clsx'
+import { LinkedInIcon } from '@/components/SocialIcons'
+import Link from 'next/link'
 
 export const program = {
   author: 'Stefan Wullems',
@@ -343,6 +345,19 @@ function TheSevenLevers() {
   )
 }
 
+function SocialLink({
+  icon: Icon,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof Link> & {
+  icon: React.ComponentType<{ className?: string }>
+}) {
+  return (
+    <Link className="group -m-1 p-1" {...props}>
+      <Icon className="h-6 w-6 fill-gray-500 transition group-hover:fill-gray-600 dark:fill-gray-400 dark:group-hover:fill-gray-300" />
+    </Link>
+  )
+}
+
 function AboutMe() {
   return (
     <div className="bg-synthwave-900 relative isolate overflow-hidden py-16 sm:py-24">
@@ -386,6 +401,13 @@ function AboutMe() {
             fast and direct path. If you’re interested, send me a LinkedIn DM,
             and let’s talk!
           </p>
+          <div className="mt-6 flex gap-6">
+            <SocialLink
+              href="https://www.linkedin.com/in/stefan-wullems-572854242/"
+              aria-label="Follow on LinkedIn"
+              icon={LinkedInIcon}
+            />
+          </div>
         </div>
         <div className="flex w-full justify-center px-40 py-10 xl:px-10">
           <Image
