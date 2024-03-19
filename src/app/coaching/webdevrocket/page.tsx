@@ -34,6 +34,14 @@ export const metadata = {
     description: program.description,
     type: 'website',
     url: `https://stefanwullemscoaching.com/coaching/webdevrocket`,
+    images: [
+      {
+        url: `https://stefanwullemscoaching.com/og-webdevrocket.png`,
+        width: 2170,
+        height: 1150,
+        alt: program.title,
+      },
+    ],
   },
 }
 const COUNT_DOWN_DATE = new Date('2024-03-31:23:59:59')
