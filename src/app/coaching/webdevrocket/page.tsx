@@ -83,21 +83,13 @@ function Hero() {
               <p className="font-gothic min-w-md mt-8 text-xl leading-8 text-gray-300 lg:max-w-none">
                 Take agency over your career.
               </p>
-              <ul className="font-gothic min-w-md text-md  mt-8 leading-8 text-gray-400 lg:max-w-none">
+              <ul className="font-gothic min-w-md text-md  mt-60 leading-8 text-gray-200 lg:max-w-none">
                 {KEYWORDS.map((keyword) => (
                   <li key={keyword} className="mr-8 inline-block">
                     {keyword}
                   </li>
                 ))}
               </ul>
-              <div className="mt-40">
-                <a
-                  href="/checkout"
-                  className=" font-gothic bg-synthwave-700 hover:bg-synthwave-600 rounded-full border-2 border-white px-8 py-5 text-2xl text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  LET'S GO
-                </a>
-              </div>
             </div>
           </div>
         </div>
