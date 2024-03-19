@@ -106,10 +106,10 @@ function Hero() {
 
 function SEOKeywords() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-950 py-16 sm:py-24">
+    <div className="shadow-synthwave-800 relative isolate mx-10 mt-10 overflow-hidden rounded-3xl py-12 shadow-lg sm:py-16">
       <div className="absolute inset-0 z-0">
         <div
-          className="bg-synthwave-900 absolute inset-0 "
+          className=" to-synthwave-800 absolute inset-0 bg-gradient-to-b from-gray-900 from-10% to-90% "
           aria-hidden="true"
         ></div>
       </div>
@@ -130,16 +130,13 @@ function SEOKeywords() {
 
 function AboutYou() {
   return (
-    <div className="bg-synthwave-900 relative isolate overflow-hidden py-16 sm:py-24">
+    <div className=" relative isolate overflow-hidden py-16 sm:py-24">
       <div className="absolute inset-0 z-0">
-        <div
-          className="from-synthwave-900  via-synthwave-800 to-synthwave-900 absolute inset-0 bg-gradient-to-tl from-10% to-90%"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0" aria-hidden="true"></div>
       </div>
       <div className="relative mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="text-synthwave-500 font-gothic text-2xl font-semibold leading-7">
+          <p className="text-synthwave-300 font-gothic text-2xl font-semibold leading-7">
             The two extremes
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -317,16 +314,16 @@ export const SevenLeversGrid = ({}: {}) => {
 
 function TheSevenLevers() {
   return (
-    <div className="bg-synthwave-900 relative isolate overflow-hidden py-16 sm:py-24">
+    <div className=" relative isolate overflow-hidden py-16 sm:py-24">
       <div className="absolute inset-0 z-0">
         <div
-          className=" from-synthwave-900 via-synthwave-800 to-synthwave-900 absolute inset-0 bg-gradient-to-tr from-10% to-90% "
+          className=" from-synthwave-900 via-synthwave-800 to-synthwave-900 absolute inset-0 bg-gradient-to-b from-10% to-90% "
           aria-hidden="true"
         ></div>
       </div>
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="text-synthwave-500 font-gothic text-2xl font-semibold leading-7">
+          <p className="text-synthwave-300 font-gothic text-2xl font-semibold leading-7">
             The Web Dev Rocket Program
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -349,7 +346,7 @@ function TheSevenLevers() {
 function AboutMe() {
   return (
     <div className="bg-synthwave-900 relative isolate overflow-hidden py-16 sm:py-24">
-      <div className="relative mx-auto flex max-w-7xl px-6 lg:px-8">
+      <div className="relative mx-auto flex max-w-7xl flex-col px-6 lg:px-8  xl:flex-row">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <p className="text-synthwave-300 font-gothic text-2xl font-semibold leading-7">
             Meet Stefan
@@ -358,34 +355,41 @@ function AboutMe() {
             Why am I doing this?
           </h2>
           <p className="font-d-din mt-6 text-lg leading-8 text-gray-300">
-            Hi, I'm Stefan. I'm a Senior Fullstack Engineer with +7 years of
-            experience, of which +5 years in Web Application Development. I'm an
-            FP expert and I've pushed code written in 6 different programming
-            languages to production.
+            I’m Stefan Wullems, a tech career coach who helps Web Developers
+            like you progress in their careers. I have 7 years of experience as
+            a software developer, 5 of which have been in the workforce, facing
+            the same kinds of problems we are talking about here and that you
+            are facing today.
             <br />
             <br />
-            I created the Web Dev Rocket coaching program to solve a multitude
-            of problems I personally faced as a Junior & Medior.
+            I’ve built this program to guide you through performing those
+            actions that move you further away from the nightmare job and
+            towards the dream job.
             <br />
-            <br />
-            I was extremely driven to grow and progress, but I didn't know what
-            to do with that drive. I ended up hopping from job to job,
-            technology to technology, hype to hype, all at the expense of
-            delivering real value. As a result, I saw little reward and
-            recognition for my hard work. I felt undervalued, underpaid and
-            pressured to prove my worth and this situation eventually led me to
-            burnout.
-            <br />
-            <br />
-            The Web Dev Rocket is the guidance I wish I had during these times,
-            and and attempt at sharing the lessons I learned so that you don't
-            have to go through the same frustration of wasting some of the most
-            fertile years of your career.
+            <br />I have carefully crafted step-by-step systems, strategies, and
+            resources to help you improve on The 6 Factors. I will continue
+            adding more for the foreseeable future.
+          </p>
+          <ul className="font-d-din mt-6 list-inside list-disc text-lg leading-8 text-gray-300">
+            <li>
+              Identify unique high-value skills to build rather than commodity
+              skills
+            </li>
+            <li>Formulate a growth plan to negotiate a raise or promotion.</li>
+            <li>Build a business case for a tool you love. </li>
+            <li>Advice on how to prepare for a tech interview. </li>
+            <li>Creating an optimized tech resume and portfolio.</li>
+          </ul>
+          <p className="font-d-din mt-6 text-lg leading-8 text-gray-300">
+            Most of these resources can be found for free on my website, but
+            this one-on-one coaching program is for people who want to take the
+            fast and direct path. If you’re interested, send me a LinkedIn DM,
+            and let’s talk!
           </p>
         </div>
-        <div className="flex w-full justify-center">
+        <div className="flex w-full justify-center px-40 py-10 xl:px-10">
           <Image
-            sizes="(min-width: 1024px) 32rem, 20rem"
+            sizes="(min-width: 512px) 16rem, 10rem"
             className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             src={withMaki}
             alt="Stefan Wullems"
@@ -398,12 +402,12 @@ function AboutMe() {
 
 export default function WebDevRocket() {
   return (
-    <>
+    <main className="bg-synthwave-900">
       <Hero />
       <SEOKeywords />
       <AboutYou />
       <TheSevenLevers />
       <AboutMe />
-    </>
+    </main>
   )
 }
