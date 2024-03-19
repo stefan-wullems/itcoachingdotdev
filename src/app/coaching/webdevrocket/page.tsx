@@ -267,7 +267,7 @@ const LEVERS = [
   },
 ]
 
-export const SevenLeversGrid = ({}: {}) => {
+const SevenLeversGrid = ({}: {}) => {
   return (
     <div className="relative isolate mt-6">
       <div className="relative flex grid-cols-6 flex-col gap-x-10 gap-y-6 rounded-2xl px-5 pb-12 pt-5 md:grid">
