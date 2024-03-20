@@ -6,6 +6,8 @@ import {
   ArrowTrendingUpIcon,
   BanknotesIcon,
   BoltIcon,
+  ClipboardDocumentIcon,
+  ClipboardDocumentListIcon,
   ListBulletIcon,
   PuzzlePieceIcon,
   ScaleIcon,
@@ -65,12 +67,12 @@ function Hero() {
           alt="The Web Dev Rocket"
         />
         <div
-          className="from-synthwave-900 absolute inset-0 bg-gradient-to-b to-transparent"
+          className="absolute inset-0 bg-gradient-to-b from-synthwave-900 to-transparent"
           aria-hidden="true"
         ></div>
         <span className="opacity-10">
           <div
-            className="hero-background-animate from-synthwave-900 via-synthwave-700 to-synthwave-600 absolute inset-0 bg-gradient-to-r"
+            className="hero-background-animate absolute inset-0 bg-gradient-to-r from-synthwave-900 via-synthwave-700 to-synthwave-600"
             aria-hidden="true"
           ></div>
         </span>
@@ -82,16 +84,16 @@ function Hero() {
         <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 lg:px-8 lg:pt-32">
           <div className="mx-auto max-w-4xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="relative w-full max-w-xl flex-col text-center lg:shrink-0 xl:max-w-4xl ">
-              <h2 className="text-synthwave-300 font-gothic min-w-md mb-4 text-2xl">
+              <h2 className="min-w-md mb-4 font-gothic text-2xl text-synthwave-300">
                 AN IT CAREER COACHING PROGRAM TAILORED TO WEB DEVELOPERS
               </h2>
-              <h1 className="font-gothic min-w-md text-6xl font-bold tracking-tight text-white sm:text-7xl">
+              <h1 className="min-w-md font-gothic text-6xl font-bold tracking-tight text-white sm:text-7xl">
                 THE WEB DEV ROCKET
               </h1>
-              <p className="font-gothic min-w-md mt-8 text-xl leading-8 text-gray-300 lg:max-w-none">
+              <p className="min-w-md mt-8 font-gothic text-xl leading-8 text-gray-300 lg:max-w-none">
                 Take agency over your career.
               </p>
-              <ul className="font-gothic min-w-md text-md mt-60 leading-8 text-gray-200 lg:max-w-none">
+              <ul className="min-w-md text-md mt-60 font-gothic leading-8 text-gray-200 lg:max-w-none">
                 {KEYWORDS.map((keyword) => (
                   <li key={keyword} className="mx-4 inline-block">
                     {keyword}
@@ -108,16 +110,16 @@ function Hero() {
 
 function SEOKeywords() {
   return (
-    <div className="shadow-synthwave-800 relative isolate mx-10 mt-10 overflow-hidden rounded-3xl py-12 shadow-lg sm:py-16">
+    <div className="relative isolate mx-10 mt-10 overflow-hidden rounded-3xl py-12 shadow-lg shadow-synthwave-800 sm:py-16">
       <div className="absolute inset-0 z-0">
         <div
-          className=" to-synthwave-800 absolute inset-0 bg-gradient-to-b from-gray-900 from-10% to-90% "
+          className=" absolute inset-0 bg-gradient-to-b from-gray-900 from-10% to-synthwave-800 to-90% "
           aria-hidden="true"
         ></div>
       </div>
       <div className="relative mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="font-d-din mt-6 text-lg leading-8 text-gray-200">
+          <p className="mt-6 font-d-din text-lg leading-8 text-gray-200">
             Work with a Tech Career Coach to achieve goals common to Web
             Engineers like you. For example, increase your software engineering
             level, compose a growth plan to negotiate a raise, identify
@@ -138,13 +140,13 @@ function AboutYou() {
       </div>
       <div className="relative mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="text-synthwave-300 font-gothic text-2xl font-semibold leading-7">
+          <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
             The two extremes
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Chase, Avoid
           </h2>
-          <p className="font-d-din mt-6 text-lg italic leading-8 text-gray-300">
+          <p className="mt-6 font-d-din text-lg italic leading-8 text-gray-300">
             Let’s imagine for a second what a nightmare job would look like.
             <br />
             <br />
@@ -229,11 +231,18 @@ function AboutYou() {
 
 const LEVERS = [
   {
-    title: 'Domain',
+    title: 'Social Impact',
     description:
-      'Are you solving impactful problems that you personally have a stake in?',
+      'Are you solving impactful problems that you personally care about?',
     icon: PuzzlePieceIcon,
-    className: 'col-start-3 col-end-5',
+    className: 'col-start-2 col-end-4',
+  },
+  {
+    title: 'Process',
+    description:
+      'Is the process serving you? Is it clear what needs to be done and why?',
+    icon: ClipboardDocumentListIcon,
+    className: 'col-start-4 col-end-6',
   },
   {
     title: 'Team',
@@ -242,14 +251,16 @@ const LEVERS = [
     className: 'col-start-1 col-end-3',
   },
   {
-    title: 'Tasks',
-    description: 'Are you regularly performing tasks that you enjoy?',
+    title: 'Responsibilities',
+    description:
+      'Do you enjoy the responsibilities and tasks your are expected to fulfill?',
     icon: ListBulletIcon,
     className: 'col-start-3 col-end-5',
   },
   {
-    title: 'Tools',
-    description: 'Are you using tools that you love? Do they do the job well?',
+    title: 'Technologies',
+    description:
+      'Are you using technologies that you love? Do they do the job well?',
     icon: WrenchScrewdriverIcon,
     className: 'col-start-5 col-end-7',
   },
@@ -274,7 +285,7 @@ const LEVERS = [
   },
 ]
 
-const SevenLeversGrid = ({}: {}) => {
+const EightFactorsGrid = ({}: {}) => {
   return (
     <div className="relative isolate mt-6">
       <div className="relative flex grid-cols-6 flex-col gap-x-10 gap-y-6 rounded-2xl px-5 pb-12 pt-5 md:grid">
@@ -284,7 +295,7 @@ const SevenLeversGrid = ({}: {}) => {
               <div
                 className={clsx(
                   'absolute inset-0',
-                  ' via-synthwave-900 border-synthwave-500 to-synthwave-500 shadow-synthwave-500 rounded-full border border-l-0 border-t-0 bg-gradient-to-br from-gray-800 from-10% via-90% shadow-md',
+                  ' rounded-full border border-l-0 border-t-0 border-synthwave-500 bg-gradient-to-br from-gray-800 from-10% via-synthwave-900 via-90% to-synthwave-500 shadow-md shadow-synthwave-500',
                 )}
               ></div>
 
@@ -300,7 +311,7 @@ const SevenLeversGrid = ({}: {}) => {
                   </h3>
                 </div>
                 <div>
-                  <p className="font-d-din text-md mt-2 text-center text-gray-300">
+                  <p className="text-md mt-2 text-center font-d-din text-gray-300">
                     {row.description}
                   </p>
                 </div>
@@ -313,32 +324,39 @@ const SevenLeversGrid = ({}: {}) => {
   )
 }
 
-function TheSevenLevers() {
+function TheEightFactors() {
   return (
     <div className=" relative isolate overflow-hidden py-16 sm:py-24">
       <div className="absolute inset-0 z-0">
         <div
-          className=" from-synthwave-900 via-synthwave-800 to-synthwave-900 absolute inset-0 bg-gradient-to-b from-10% to-90% "
+          className=" absolute inset-0 bg-gradient-to-b from-synthwave-900 from-10% via-synthwave-800 to-synthwave-900 to-90% "
           aria-hidden="true"
         ></div>
       </div>
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="text-synthwave-300 font-gothic text-2xl font-semibold leading-7">
+          <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
             The Web Dev Rocket Program
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            The Seven Levers
+            The Eight Factors
           </h2>
-          <p className="font-d-din mt-6 text-lg leading-8 text-gray-300">
+        </div>
+        <div className="grid grid-cols-2 gap-10">
+          <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
             In my 7 years as a software developer, I’ve observed in myself and
-            others that the satisfaction of a development job is roughly
-            dependent on 7 factors, which I call The 7 Levers of Job
-            Satisfaction.
+            others that the fulfillment of a development job is roughly
+            dependent on eight pillars, which I call The Eight Pillars of
+            Fulfillment.
+          </p>
+          <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
+            The Web Dev Rocket is a collection of actions targeted at improving
+            these pillars, together with a coach who pushes, supports, guides
+            and assists you through these action. Expect to be challenged, but
+            also expect to see a ton of progress.
           </p>
         </div>
-
-        <SevenLeversGrid />
+        <EightFactorsGrid />
       </div>
     </div>
   )
@@ -359,16 +377,16 @@ function SocialLink({
 
 function AboutMe() {
   return (
-    <div className="bg-synthwave-900 relative isolate overflow-hidden py-16 sm:py-24">
+    <div className="relative isolate overflow-hidden bg-synthwave-900 py-16 sm:py-24">
       <div className="relative mx-auto flex max-w-7xl flex-col px-6 lg:px-8  xl:flex-row">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="text-synthwave-300 font-gothic text-2xl font-semibold leading-7">
+          <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
             Meet Stefan
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Why am I doing this?
           </h2>
-          <p className="font-d-din mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
             I’m Stefan Wullems, a tech career coach who helps Web Developers
             like you progress in their careers. I have 7 years of experience as
             a software developer, 5 of which have been in the workforce, facing
@@ -381,13 +399,13 @@ function AboutMe() {
             job.
             <br />
             <br />I have carefully crafted step-by-step systems, checklists, and
-            templates to help you improve on The 7 Factors. I will continue
+            templates to help you improve on The Eight Factors. I will continue
             adding more for the foreseeable future.
             <br />
             <br />
             Some examples:
           </p>
-          <ul className="font-d-din mt-6 list-inside list-disc text-lg leading-8 text-gray-300">
+          <ul className="mt-6 list-inside list-disc font-d-din text-lg leading-8 text-gray-300">
             <li>
               Identify unique high-value skills to build rather than commodity
               skills
@@ -397,7 +415,7 @@ function AboutMe() {
             <li>Advice on how to prepare for a tech interview. </li>
             <li>Creating an optimized tech resume and portfolio.</li>
           </ul>
-          <p className="font-d-din mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
             Most of these resources can be found for free on my website, but
             this one-on-one coaching program is for people who want to take the
             fast and direct path. If you’re interested, send me a LinkedIn DM,
@@ -430,7 +448,7 @@ export default function WebDevRocket() {
       <Hero />
       <SEOKeywords />
       <AboutYou />
-      <TheSevenLevers />
+      <TheEightFactors />
       <AboutMe />
     </main>
   )
