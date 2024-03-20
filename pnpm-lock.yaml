@@ -71,6 +71,9 @@ dependencies:
   remark-gfm:
     specifier: ^4.0.0
     version: 4.0.0
+  remark-images:
+    specifier: ^4.0.0
+    version: 4.0.0
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
@@ -2657,6 +2660,10 @@ packages:
       which-typed-array: 1.1.14
     dev: true
 
+  /is-url@1.2.4:
+    resolution: {integrity: sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww==}
+    dev: false
+
   /is-weakmap@2.0.1:
     resolution: {integrity: sha512-NSBR4kH5oVj1Uwvv970ruUkCV7O1mzgVFO4/rev2cLRda9Tm9HrL70ZPut4rOHgY0FNrUu9BCbXA2sdQ+x0chA==}
     dev: true
@@ -4000,6 +4007,16 @@ packages:
       unified: 11.0.4
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /remark-images@4.0.0:
+    resolution: {integrity: sha512-YDZffkzmDWAve3tphTLZXlATb7TkJxTxqTJGrZDr+DSCMtVm78rCf4FORB/B+G64B0xGeXDfE6FUUb5mlTg3SQ==}
+    dependencies:
+      '@types/mdast': 4.0.3
+      collapse-white-space: 2.1.0
+      is-url: 1.2.4
+      unist-util-position: 5.0.0
+      unist-util-visit-parents: 6.0.1
     dev: false
 
   /remark-mdx@3.0.1:

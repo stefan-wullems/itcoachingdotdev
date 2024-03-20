@@ -22,7 +22,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
           {formatDate(article.date)}
         </Card.Eyebrow>
         <Card.Description>
-          {article.description}
+          {article.description}{' '}
           {article.tags.map((tag) => (
             <Tag key={tag}>{tag}</Tag>
           ))}

@@ -1,0 +1,106 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { AWSCertifications } from '@/components/AWSCertifications'
+
+export const article = {
+  author: 'Stefan Wullems',
+  date: '2024-03-20',
+  title: 'How I got my first FP job',
+  tags: ['story-time'],
+  description:
+    'This is the story of getting my first FP job, along with the insights I found along the way.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+  openGraph: {
+    title: article.title,
+    description: article.description,
+    type: 'article',
+    url: `https://stefanwullemscoaching.com/articles/my-first-fp-job`,
+    authors: [article.author],
+    images: [
+      {
+        url: `https://stefanwullemscoaching.com/og-fp-job.png`,
+        alt: article.title,
+        width: 2400,
+        height: 1254,
+        type: 'image/png'
+      },
+    ],
+  },
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+This is the story of getting my first FP job, along with the insights I found along the way. We’ll cover FP in TypeScript, learning Elm, a tangent into Haskell, and further into Dependent Types with Idris, Coq, and Agda, and finally getting my first FP job using Elm.
+
+Functional Programming is incredible, but sadly, only a tiny fraction of companies use it and hire for it. Finding and getting hired at one of these companies might sound complicated, but I’ll show you how I did it so you can better understand what it takes.
+
+<img src="/fplangs.png" className="rounded-3xl bg-zinc-950" alt='Functional Programming' />
+
+Because functional programming isn’t a widespread skill, employers looking for functional programmers often expect and are okay with candidates who still need to learn. This means that experience with functional programming is sometimes optional. However, if you do have experience, you’ll have a massive leg up over candidates who don’t.
+
+I’ll share my story of getting my first Functional Programming job. I hope it gives you a clearer image of how much experience you need to get hired for one.
+
+### My First Contact with FP
+
+At my first job, we experimented with many principles for writing good programs. After going total OOP for a while, we decided to try FP. We were delighted by its simplicity and were often surprised by the simplicity of solutions written according to this style.
+
+This led us to dive deeper into functional programming concepts. We explored lenses to update deeply nested objects and started thinking in terms of composition. Large, complicated functions and object graphs became chains of multiple simple functions. Abstractions were discarded in favor of data and functions.
+
+All this was great, and I wanted to immerse myself even more. We were still doing everything in TypeScript, and I wanted to work with an actual FP language.
+
+This was when I found Elm, a pure, statically typed FP language for front-end development. I was blown away by its simplicity and the promise of no runtime errors, ever! After work hours (and sometimes during work hours), I watched every single Elm talk I could get my hands on, and I walked through the book [Elm in Action by Richard Feldman](https://www.manning.com/books/elm-in-action?utm_source=stefan-wullems&utm_medium=affiliate&utm_campaign=book_rfeldman_elm_4_14_20&utm_content=number2&a_aid=stefan-wullems&a_bid=a11d59e7), a key figure in the Elm community.
+
+After I exhausted most of the Elm content, I wanted to start using it at work, but I couldn’t convince my teammate; neither of us had experience with it, so we were unsure if it would work, and he had other things he wanted to try.
+
+Initially, I let it go and started looking at other things. I found [the Eric Normand podcast](https://ericnormand.me/podcast) and listened to episode after episode while walking my dog. Eric had a massive influence on me when it came to functional programming. His podcast distills functional programming down to the core philosophy and concepts. This stuff is potent. I still use it to this day, even in non-functional languages. If this sounds interesting but you’re more of a reader, he also put out a great book covering some these topics in great detail: [Grokking Simplicity](https://www.manning.com/books/grokking-simplicity?utm_source=stefan-wullems&utm_medium=affiliate&utm_campaign=book_normand_grokking_8_20_19&a_aid=stefan-wullems&a_bid=72596968).
+
+I was going deeper and deeper into functional programming, Watching Haskell talks, reading type theory books, and playing with Dependently Typed languages, but I still wasn’t applying much of it in my day-to-day life. I decided to go for it, and I quit my job.
+
+### Dependent Types Era
+
+I took a few months to explore the rabbit hole of Dependent Types. I Learned Idris (basically dependently typed Haskell) by following the [Type Driven Design with Idris](https://www.manning.com/books/type-driven-development-with-idris) book. I read about type theory while turning proofs I encountered into Idris code (yes, you can mathematically prove things in Dependently Typed languages). I also played around with Mathematical Proof Assistants like Coq and Agda.
+
+**Slight tangent, just for fun**: Dependent Types add another layer of capability to your type system by not just limiting itself to complete sets of data (e.g., all numbers, all strings, etc.). Types in dependently typed languages can also have concrete values!
+
+```idris
+-- 1. The definition of a function called ‘index’
+index	 :
+  -- 2. Takes a number between 0 and the length of the vector
+  Fin len -> 
+  -- 3. And a vector of a generic ‘elem’ with the given length
+  -- Note that len is a concrete number, not just the general “any number.”
+  Vect len elem -> 
+  -- 4. And returns an ‘elem’ (note that it’s not null, empty, undefined, or whatever)
+  elem
+```
+
+In most languages, getting an element by index from a vector can return an empty value when the index you ask for is out of bounds. In Idris, however, because the type system is more powerful, we can prove to the type checker that the element we’re looking for exists.
+
+After having gone this deep, I can tell you that it was exciting, but I can guarantee that you don’t need 99% of it to become an excellent functional programmer, just like you don’t need to know how a TV works to watch Stranger Things, or how a formula 1 car works to drive a Fiat. Maybe the knowledge can help you here and there, but practicing whatever you want to do directly is the most valuable use of your time. It does look okay on your resume, though.
+
+### Job Hunting
+
+At some point, I had enough of studying without building or making any money, so I started applying for Elm jobs.
+
+When applying for functional programming jobs, I recommend that you be prepared to work remotely for a company in a different country. Companies that hire for niche technologies often allow employees to work remotely from anywhere in the world, making it easier to find enough people with the skills they are looking for. For example, the company that invited me to an interview was Swedish, even though I lived in Portugal.
+
+After a culture fit interview, I continued to the coding assignment. In this case, it was a take-home assignment where I had to clone the current repo, set up the development environment, and add a new page to the front end. This was my first time writing Elm (apart from following Elm in Action step-by-step), but surprisingly, I had no trouble with the development. Everything was just very straightforward. That’s the power of FP!
+
+Not long after I submitted it, I was invited to the final interview step, and a few weeks later, I started my first day using Elm! Success!
+
+Here’s something cool: Before coding the take-home assignment, I created a quick wireframe design in Figma and sent it to him, asking for feedback. After I got hired, I could look back at the review comments I got on the assignment, and to my surprise, the interviewer expressed a lot of appreciation for the design, even though it had nothing to do with FP.
+
+The lesson I take from this is that although programming skills are essential, communication and cooperation are just as important. In your next interview, don’t just show how good you can code; show how great a communicator you are and how pleasant it is to work alongside you.
+
+### Conclusion
+
+I studied functional programming quite hard before I applied for my first job. But I also wasted a lot of time on very interesting but, looking back, kind of useless things. I was too focused on the tech side, while the people side is just as important, if not more so. This whole transition took me about six months, but focusing on the right things can make it take much, much less.
+
+If you’re considering getting a job in Functional Programming and don’t want to waste as much time as I did, then you’re in luck. I created the Web Dev Rocket, an IT Career Coaching program where I help Web Developers build the careers they want.
+
+I will help you formulate a growth plan that avoids some of the pain points and inefficiencies I experienced. I will also hold you accountable to make it easier to stay motivated. I will help you build a resume and portfolio that stand out and prepare for the interviewing process to stack the odds in your favor.
+
+[That sounds pretty cool. Tell me more →](https://www.stefanwullemscoaching.com/coaching/webdevrocket)
