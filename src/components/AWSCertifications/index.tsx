@@ -96,14 +96,14 @@ export const AWSCertifications = ({
 }) => {
   return (
     <div className="relative isolate">
-      <div className="relative grid grid-cols-8 gap-x-10 rounded-2xl bg-zinc-950 bg-gradient-to-tl from-transparent via-transparent to-emerald-900 px-5 pb-12 pt-5">
+      <div className="relative grid grid-cols-8 gap-x-10 rounded-2xl bg-gray-950 bg-gradient-to-tl from-transparent via-transparent to-emerald-900 px-5 pb-12 pt-5">
         {ROWS.map((row) => (
           <div key={row.id} className={clsx(row.className, 'relative')}>
             <div className="relative">
               {row.id === highlighted && (
                 <div
                   className={clsx(
-                    'animate-ping-xs absolute inset-0',
+                    'absolute inset-0 animate-ping-xs',
                     'rounded-full    border border-emerald-900  ',
                   )}
                 ></div>
@@ -111,7 +111,7 @@ export const AWSCertifications = ({
               {row.id === highlighted && (
                 <div
                   className={clsx(
-                    'animate-ping-xs-offset absolute inset-0',
+                    'absolute inset-0 animate-ping-xs-offset',
                     'rounded-full    border border-emerald-900  ',
                   )}
                 ></div>
@@ -119,7 +119,7 @@ export const AWSCertifications = ({
               <div
                 className={clsx(
                   'absolute inset-0',
-                  'rounded-full border border-l-0 border-t-0  border-emerald-900 border-opacity-40  bg-gradient-to-br  from-zinc-950 from-70% to-emerald-900 ',
+                  'rounded-full border border-l-0 border-t-0  border-emerald-900 border-opacity-40  bg-gradient-to-br  from-gray-950 from-70% to-emerald-900 ',
                 )}
               ></div>
 

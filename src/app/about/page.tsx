@@ -23,9 +23,9 @@ function SocialLink({
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-emerald-500 dark:text-zinc-200 dark:hover:text-emerald-500"
+        className="group flex text-sm font-medium text-gray-800 transition hover:text-synthwave-300 dark:text-gray-200 dark:hover:text-synthwave-300"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-emerald-500" />
+        <Icon className="h-6 w-6 flex-none fill-gray-500 transition group-hover:fill-synthwave-300" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -60,16 +60,16 @@ export default function About() {
                 src={portraitImage}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                className="aspect-square rotate-3 rounded-2xl bg-gray-100 object-cover dark:bg-gray-800"
               />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-gray-100">
               I’m Stefan Wullems. I live in Amsterdam and help people level up
               their web careers.
             </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 space-y-7 text-base text-gray-600 dark:text-gray-400">
               <p>
                 I loved building things and solving problems for as long as I
                 can remember. School was never my thing. Instead, I used to skip
@@ -102,14 +102,14 @@ export default function About() {
                 If any of this speaks to you, feel free to{' '}
                 <Link
                   href="mailto:stefan@stefanwullemscoaching.com"
-                  className="font-medium text-emerald-500 underline"
+                  className="font-medium text-synthwave-300 underline"
                 >
                   email me
                 </Link>{' '}
                 or{' '}
                 <Link
                   href="https://www.linkedin.com/in/stefan-wullems-572854242/"
-                  className="font-medium text-emerald-500 underline"
+                  className="font-medium text-synthwave-300 underline"
                 >
                   DM me on Linkedin
                 </Link>
@@ -136,7 +136,7 @@ export default function About() {
               <SocialLink
                 href="mailto:stefan@stefanwullemscoaching.com"
                 icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+                className="mt-8 border-t border-gray-100 pt-8 dark:border-gray-700/40"
               >
                 stefan@stefanwullemscoaching.com
               </SocialLink>

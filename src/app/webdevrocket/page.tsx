@@ -35,7 +35,7 @@ export const metadata = {
     title: program.title,
     description: program.description,
     type: 'website',
-    url: `https://stefanwullemscoaching.com/coaching/webdevrocket`,
+    url: `https://stefanwullemscoaching.com/webdevrocket`,
     images: [
       {
         url: `https://stefanwullemscoaching.com/og-webdevrocket.png`,
@@ -146,11 +146,11 @@ function AboutYou() {
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Chase, Avoid
           </h2>
-          <p className="mt-6 font-d-din text-lg italic leading-8 text-gray-300">
+          <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
             Let’s imagine for a second what a nightmare job would look like.
             <br />
             <br />
-            <span className="ml-2 inline-block">
+            <span className="ml-2 inline-block italic">
               In a nightmare job, you would be working on{' '}
               <strong className="font-d-din-bold text-gray-200">
                 problems you could care less about
@@ -432,7 +432,7 @@ function AboutMe() {
         <div className="flex w-full justify-center px-10 py-10 sm:px-40 xl:px-0 xl:py-40 xl:pl-10">
           <Image
             sizes="(min-width: 512px) 16rem, 10rem"
-            className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            className="aspect-square rotate-3 rounded-2xl bg-gray-100 object-cover dark:bg-gray-800"
             src={withMaki}
             alt="Stefan Wullems"
           />
