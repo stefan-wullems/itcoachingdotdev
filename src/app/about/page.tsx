@@ -95,25 +95,15 @@ export default function About() {
               </p>
               <p>
                 Today, I’m a Web Career Coach. I specifically help Web
-                Developers level up their careers by improving their skills in
-                the three levers of value: Tech, Organization, and Self.
+                Developers advance their careers by making their skills and
+                progress visible to others.
               </p>
               <p>
-                If any of this speaks to you, feel free to{' '}
-                <Link
-                  href="mailto:stefan@stefanwullemscoaching.com"
-                  className="font-medium text-synthwave-300 underline"
-                >
-                  email me
+                Check out the{' '}
+                <Link className="link-component" href="/webdevrocket">
+                  Web Dev Rocket
                 </Link>{' '}
-                or{' '}
-                <Link
-                  href="https://www.linkedin.com/in/stefan-wullems-572854242/"
-                  className="font-medium text-synthwave-300 underline"
-                >
-                  DM me on Linkedin
-                </Link>
-                !
+                coaching program for more info!
               </p>
             </div>
           </div>
@@ -134,11 +124,11 @@ export default function About() {
                 Follow on GitHub
               </SocialLink>
               <SocialLink
-                href="mailto:stefan@stefanwullemscoaching.com"
+                href="mailto:stefan@itcoaching.dev"
                 icon={MailIcon}
                 className="mt-8 border-t border-gray-100 pt-8 dark:border-gray-700/40"
               >
-                stefan@stefanwullemscoaching.com
+                stefan@itcoaching.dev
               </SocialLink>
             </ul>
           </div>

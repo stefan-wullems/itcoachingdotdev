@@ -303,10 +303,7 @@ export default async function Home() {
             <br />
             <br />
             If you want to take ownership of your career, consider the{' '}
-            <Link
-              className=" text-synthwave-300 hover:underline"
-              href="/webdevrocket"
-            >
+            <Link className="link-component" href="/webdevrocket">
               Web Dev Rocket program
             </Link>
             . Let’s work together on building the career you want!

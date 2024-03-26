@@ -66,3 +66,6 @@
 }
 
 
+.link-component {
+  @apply font-medium text-synthwave-300 underline hover:text-synthwave-500
+}

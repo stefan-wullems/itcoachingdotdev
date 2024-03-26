@@ -96,7 +96,7 @@ export const AWSCertifications = ({
 }) => {
   return (
     <div className="relative isolate">
-      <div className="relative grid grid-cols-8 gap-x-10 rounded-2xl bg-gray-950 bg-gradient-to-tl from-transparent via-transparent to-emerald-900 px-5 pb-12 pt-5">
+      <div className="relative grid grid-cols-8 gap-x-10 rounded-2xl  border-synthwave-300 bg-black bg-gradient-to-tl from-transparent via-transparent to-synthwave-300 px-5 pb-12 pt-5 shadow-md">
         {ROWS.map((row) => (
           <div key={row.id} className={clsx(row.className, 'relative')}>
             <div className="relative">
@@ -104,7 +104,7 @@ export const AWSCertifications = ({
                 <div
                   className={clsx(
                     'absolute inset-0 animate-ping-xs',
-                    'rounded-full    border border-emerald-900  ',
+                    'rounded-full    border border-synthwave-300  ',
                   )}
                 ></div>
               )}
@@ -112,14 +112,14 @@ export const AWSCertifications = ({
                 <div
                   className={clsx(
                     'absolute inset-0 animate-ping-xs-offset',
-                    'rounded-full    border border-emerald-900  ',
+                    'rounded-full    border border-synthwave-300  ',
                   )}
                 ></div>
               )}
               <div
                 className={clsx(
                   'absolute inset-0',
-                  'rounded-full border border-l-0 border-t-0  border-emerald-900 border-opacity-40  bg-gradient-to-br  from-gray-950 from-70% to-emerald-900 ',
+                  'rounded-full border border-l-0 border-t-0  border-synthwave-300 border-opacity-40  bg-gradient-to-br  from-black from-70% to-synthwave-300 ',
                 )}
               ></div>
 
