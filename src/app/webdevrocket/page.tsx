@@ -20,6 +20,14 @@ import clsx from 'clsx'
 import { LinkedInIcon } from '@/components/SocialIcons'
 import Link from 'next/link'
 
+import gqlLogo from './images/gql.png'
+import rustLogo from './images/rust.png'
+import webAssemblyLogo from './images/webassembly.png'
+
+import awsCertDevAssLogo from './images/aws-certified-dev-associate.png'
+import compTiaLinuxPlusLogo from './images/comp-tia-linux-plus.png'
+import k8sAppDevLogo from './images/certified-k8s-app-dev.png'
+
 const program = {
   author: 'Stefan Wullems',
   date: '2024-03-19',
@@ -141,93 +149,53 @@ function AboutYou() {
       <div className="relative mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
-            The two extremes
+            The problem of invisible skill
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Chase, Avoid
+            Do you recognize this?
           </h2>
+          {/* <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
+            Building awesome software is all about skill, but sadly, skill isn’t
+            immediately visible to others. You can be skilled but still
+            undervalued by your employer. This might be happening to you if you
+            recognize the following things:
+          </p> */}
+          <ul className="mt-6 list-inside list-disc font-d-din text-lg leading-8 text-gray-300">
+            <li>Difficulty finding a high paying, exciting job</li>
+            <li>Get lowball job offers from potential employers</li>
+            <li>Not being paid your worth from current employers</li>
+            <li>
+              Lack of opportunities to take on more responsibility or get
+              promoted{' '}
+            </li>
+            <li>Lack of credibility and freedom to do things your way</li>
+          </ul>
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            Let’s imagine for a second what a nightmare job would look like.
+            Skill and knowledge are crucial for a succesful software development
+            career, but sadly salaries, job titles and respobsibilities are
+            often based on first impressions, which means that if your skill
+            isn't visible, you will be undervalued. This means you have to prove
+            your worth to get what you deserve.
             <br />
             <br />
-            <span className="ml-2 inline-block italic">
-              In a nightmare job, you would be working on{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                problems you could care less about
-              </strong>{' '}
-              or even oppose, together with{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                toxic colleagues
-              </strong>
-              , performing{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                mindless tasks
-              </strong>
-              , using{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                tools you hate
-              </strong>
-              ,{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                stagnating
-              </strong>
-              , and getting{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                paid too little
-              </strong>
-              , all while needing to{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                crunch and work overtime
-              </strong>
-              .
-            </span>
-            <br />
-            <br />
-            As a contrast, here is a definition of a dream job.
-            <br />
-            <br />
-            <span className="ml-2 inline-block italic">
-              The dream job is working on the{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                problems you care about
-              </strong>{' '}
-              with{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                awesome colleagues
-              </strong>
-              , performing the{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                tasks you enjoy
-              </strong>
-              , using the{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                tools you love
-              </strong>
-              , and continually{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                improving your craft
-              </strong>{' '}
-              while getting{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                paid a fair salary
-              </strong>{' '}
-              with a{' '}
-              <strong className="font-d-din-bold text-gray-200">
-                solid work-life balance
-              </strong>
-              .
-            </span>
-            <br />
-            <br />
-            What if I told you that each and every one of the differences
-            between these two extrememes is within your control. It is in your
-            hands to move away from the nightmare job and towards the dream job.
+            The trick to sidestep this problem is to continue to grow and build
+            cool stuff, but do so in a visible way. I designed the Web Dev
+            Rocket to help driven individuals like you get rewarded for their
+            work by making by doing exactly this: make your skill and growth
+            visible.
           </p>
+          {button}
         </div>
       </div>
     </div>
   )
 }
+
+const button = (
+  <button className="mt-6 rounded-full  border border-synthwave-300 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-300">
+    Get in touch
+  </button>
+)
 
 const LEVERS = [
   {
@@ -324,6 +292,20 @@ const EightFactorsGrid = ({}: {}) => {
   )
 }
 
+const PROJECTS = [
+  'Open Source Libraries',
+  'Games',
+  'Programming Languages',
+  'Game Engines',
+  'Blockchain Applications',
+  'AI Applications',
+  'Social Media Clones',
+  'IoT Applications',
+  'Handwritten LLMs',
+  'UI Libraries',
+  'Web Frameworks',
+]
+
 function TheEightFactors() {
   return (
     <div className=" relative isolate overflow-hidden py-16 sm:py-24">
@@ -339,28 +321,101 @@ function TheEightFactors() {
             The Web Dev Rocket Program
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            The Eight Factors
+            What will you get?
           </h2>
         </div>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid gap-10 sm:grid-cols-2">
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            In my 7 years as a software developer, I’ve observed in myself and
-            others that the fulfillment of a development job is roughly
-            dependent on eight pillars, which I call The Eight Pillars of
-            Fulfillment.
+            I will design, implement and deploy a portfolio website to establish
+            your personal brand. This portfolio will have a brag document to
+            highlight your achievements and a fully functional blog to broadcast
+            your experience to the world in a professional way.
           </p>
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            The Web Dev Rocket is a collection of actions targeted at improving
-            these pillars, together with a coach who pushes, supports, guides
-            and assists you through these action. Expect to be challenged, but
-            also expect to see a ton of progress.
+            Additionally, I will help you expand your brag document with weekly
+            1-on-1 accountability coaching sessions. We will make a growth plan
+            that aligns with your goals and interests. We'll build impressive
+            yet manageable projects using exciting tools you'll attain the most
+            prestigious certifications.
           </p>
         </div>
-        <EightFactorsGrid />
+        <div className="mt-10">
+          <div className="mt-10">
+            <h3 className="text-center font-gothic text-2xl font-bold tracking-tight text-white sm:text-5xl">
+              Build Impressive Projects
+            </h3>
+            <ul className="min-w-md mt-10 py-6 text-center font-d-din text-xl leading-10 text-gray-300 sm:py-12 lg:max-w-none">
+              {PROJECTS.map((keyword) => (
+                <li key={keyword} className="mx-10 my-2 inline-block">
+                  {keyword}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mt-10">
+            <h3 className=" text-center font-gothic text-2xl font-bold tracking-tight text-white  sm:text-5xl">
+              Using Reputable Tools
+            </h3>
+            <div className="flex flex-col items-center justify-evenly py-10 opacity-50 sm:flex-row">
+              <div className="py-6 sm:py-12">
+                <Image
+                  src={webAssemblyLogo}
+                  alt="Webassembly"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="py-6 sm:py-12">
+                <Image src={rustLogo} alt="Rust" width={150} height={150} />
+              </div>
+              <div className="py-6 sm:py-12">
+                <Image src={gqlLogo} alt="GraphQL" width={150} height={150} />
+              </div>
+            </div>
+          </div>
+          <div className="mt-10">
+            <h3 className="text-center font-gothic text-2xl font-bold tracking-tight text-white sm:text-5xl">
+              Earn Prestigious Certifications
+            </h3>
+            <div className="flex flex-col items-center justify-evenly py-10 opacity-50 sm:flex-row">
+              <div className="py-6 sm:py-12">
+                <Image
+                  src={awsCertDevAssLogo}
+                  alt="AWS Certified Developer Associate"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="py-6 sm:py-12">
+                <Image
+                  src={compTiaLinuxPlusLogo}
+                  alt="CompTia Linux+"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="py-6 sm:py-12">
+                <Image
+                  src={k8sAppDevLogo}
+                  alt="Certified Kubernetes Application Developer"
+                  width={150}
+                  height={150}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
 }
+
+// (AI, Open Source
+//   Libraries, Custom Programming Languages, Web Frameworks, Game
+//   Engines)
+
+// (Rust, Zig, Gleam, htmx etc.)
+// (AWS Certifications, CompTia, Kubernetes)
 
 function SocialLink({
   icon: Icon,
