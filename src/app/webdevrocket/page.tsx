@@ -6,9 +6,11 @@ import {
   ArrowTrendingUpIcon,
   BanknotesIcon,
   BoltIcon,
+  CheckIcon,
   ClipboardDocumentIcon,
   ClipboardDocumentListIcon,
   ListBulletIcon,
+  PlusIcon,
   PuzzlePieceIcon,
   ScaleIcon,
   UserGroupIcon,
@@ -118,10 +120,10 @@ function Hero() {
 
 function SEOKeywords() {
   return (
-    <div className="relative isolate mx-10 mt-10 overflow-hidden rounded-3xl py-12 shadow-lg shadow-synthwave-800 sm:py-16">
+    <div className="relative isolate mx-10 mt-10 overflow-hidden rounded-3xl border  border-synthwave-300 py-12 shadow-md  shadow-synthwave-300 sm:py-16">
       <div className="absolute inset-0 z-0">
         <div
-          className=" absolute inset-0 bg-gradient-to-b from-gray-900 from-10% to-synthwave-800 to-90% "
+          className=" absolute inset-0 bg-gradient-to-br from-synthwave-300 to-synthwave-900 to-30%"
           aria-hidden="true"
         ></div>
       </div>
@@ -147,42 +149,52 @@ function AboutYou() {
         <div className="absolute inset-0" aria-hidden="true"></div>
       </div>
       <div className="relative mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="mx-auto max-w-3xl lg:mx-0">
           <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
-            The problem of invisible skill
+            Incomplete work
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Do you recognize this?
+            Do you work hard but still struggle with these things:
           </h2>
-          {/* <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            Building awesome software is all about skill, but sadly, skill isn’t
-            immediately visible to others. You can be skilled but still
-            undervalued by your employer. This might be happening to you if you
-            recognize the following things:
-          </p> */}
           <ul className="mt-6 list-inside list-disc font-d-din text-lg leading-8 text-gray-300">
-            <li>Difficulty finding a high paying, exciting job</li>
-            <li>Get lowball job offers from potential employers</li>
+            <li>Difficulty finding a good high paying job</li>
             <li>Not being paid your worth from current employers</li>
             <li>
               Lack of opportunities to take on more responsibility or get
               promoted{' '}
             </li>
-            <li>Lack of credibility and freedom to do things your way</li>
+            <li>Little to show for your work</li>
           </ul>
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            Skill and knowledge are crucial for a succesful software development
-            career, but sadly salaries, job titles and respobsibilities are
-            often based on first impressions, which means that if your skill
-            isn't visible, you will be undervalued. This means you have to prove
-            your worth to get what you deserve.
+            Hard work pays off, but it‘s possible to work hard in very
+            inefficient ways. Often I see driven developers, including my
+            younger self, work hard but make one mistake that will cause much of
+            their work to be in vain.{' '}
+            <strong className="font-d-din-bold">
+              Under the spell of excitement, they start project after project,
+              rarely finishing one.
+            </strong>
             <br />
             <br />
-            The trick to sidestep this problem is to continue to grow and build
-            cool stuff, but do so in a visible way. I designed the Web Dev
-            Rocket to help driven individuals like you get rewarded for their
-            work by making by doing exactly this: make your skill and growth
-            visible.
+            Not only do{' '}
+            <strong className="font-d-din-bold">
+              we miss out on much important experience
+            </strong>
+            , it also becomes{' '}
+            <strong className="font-d-din-bold">
+              difficult to prove our skill and work ethic in moments it really
+              matters
+            </strong>{' '}
+            (e.g. applying for a job, or your boss is trying to convince his
+            boss that you are a good candidate for a promotion)
+            <br />
+            <br />I designed the{' '}
+            <strong className="font-d-din-bold">Web Dev Rocket</strong> to help
+            driven individuals like you sidestep this problem and{' '}
+            <strong className="font-d-din-bold">
+              ensure your hard work is rewarding
+            </strong>
+            . We‘ll finish awesome projects and we‘ll make them presentable too.
           </p>
           {button}
         </div>
@@ -193,6 +205,12 @@ function AboutYou() {
 
 const button = (
   <button className="mt-6 rounded-full  border border-synthwave-300 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-300">
+    Get in touch
+  </button>
+)
+
+const button2 = (
+  <button className="mt-6 rounded-full  border border-synthwave-500 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-500">
     Get in touch
   </button>
 )
@@ -308,14 +326,8 @@ const PROJECTS = [
 
 function TheEightFactors() {
   return (
-    <div className=" relative isolate overflow-hidden py-16 sm:py-24">
-      <div className="absolute inset-0 z-0">
-        <div
-          className=" absolute inset-0 bg-gradient-to-b from-synthwave-900 from-10% via-synthwave-800 to-synthwave-900 to-90% "
-          aria-hidden="true"
-        ></div>
-      </div>
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-gradient-to-b from-synthwave-900 from-10% via-synthwave-300/30 to-synthwave-900 to-90% py-16 sm:py-24">
+      <div className=" mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
             The Web Dev Rocket Program
@@ -326,25 +338,39 @@ function TheEightFactors() {
         </div>
         <div className="grid gap-10 sm:grid-cols-2">
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            I will design, implement and deploy a portfolio website to establish
-            your personal brand. This portfolio will have a brag document to
-            highlight your achievements and a fully functional blog to broadcast
-            your experience to the world in a professional way.
+            I will design, implement, deploy and manage{' '}
+            <strong className="font-d-din-bold">
+              a portfolio website to establish your personal brand and show off
+              your skills
+            </strong>
+            . This portfolio will have a brag document to highlight your
+            achievements and a fully functional blog to broadcast your
+            experience to the world in a professional way.
           </p>
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            Additionally, I will help you expand your brag document with weekly
-            1-on-1 accountability coaching sessions. We will make a growth plan
-            that aligns with your goals and interests. We'll build impressive
-            yet manageable projects using exciting tools you'll attain the most
-            prestigious certifications.
+            Additionally, I will help you expand your brag document with{' '}
+            <strong className="font-d-din-bold">
+              weekly 1-on-1 accountability coaching sessions.
+            </strong>{' '}
+            We will make a growth plan that aligns with your goals and interests
+            and I will keep you focused and moving forward. You‘ll{' '}
+            <strong className="font-d-din-bold">
+              build impressive projects using exciting tools
+            </strong>
+            , and you‘ll{' '}
+            <strong className="font-d-din-bold">
+              earn prestigious certifications
+            </strong>
+            .
           </p>
         </div>
+
         <div className="mt-10">
-          <div className="mt-10">
+          <div className="mt-40">
             <h3 className="text-center font-gothic text-2xl font-bold tracking-tight text-white sm:text-5xl">
               Build Impressive Projects
             </h3>
-            <ul className="min-w-md mt-10 py-6 text-center font-d-din text-xl leading-10 text-gray-300 sm:py-12 lg:max-w-none">
+            <ul className="min-w-md mt-10 py-6 text-center font-d-din text-2xl leading-10 text-gray-300 sm:py-12 lg:max-w-none">
               {PROJECTS.map((keyword) => (
                 <li key={keyword} className="mx-10 my-2 inline-block">
                   {keyword}
@@ -410,12 +436,83 @@ function TheEightFactors() {
   )
 }
 
-// (AI, Open Source
-//   Libraries, Custom Programming Languages, Web Frameworks, Game
-//   Engines)
-
-// (Rust, Zig, Gleam, htmx etc.)
-// (AWS Certifications, CompTia, Kubernetes)
+function Bonuses() {
+  return (
+    <div className=" bg-gradient-to-b from-synthwave-900 from-10% via-synthwave-500/30 to-synthwave-900 to-90% py-16 sm:py-24">
+      <div className="mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl lg:mx-0">
+          <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-500">
+            Bonuses
+          </p>
+          <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            What else do you get?
+          </h2>
+          <div className="mt-6">
+            <div className="rounded-xl bg-gradient-to-br from-synthwave-500 to-synthwave-900 to-20% p-6 shadow-md shadow-synthwave-500">
+              <h3 className="text-center font-gothic text-2xl font-bold tracking-tight text-white sm:text-2xl">
+                The Comprehensive “Portfolio Management” Bundle
+              </h3>
+              <ul className="mt-6 list-inside list-none font-d-din text-lg leading-8 text-gray-300">
+                <li className="flex">
+                  <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                  <div className="inline-block">
+                    Quick Portfolio Domain Name checklist
+                  </div>
+                </li>
+                <li className="flex">
+                  <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                  <div className="inline-block">
+                    The 60 Min Brand Questionnaire for Quick Design and Content
+                    Drafting
+                  </div>
+                </li>
+                <li className="flex">
+                  <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                  <div className="inline-block">
+                    Complete Handover Session at the end of coaching where I
+                    explain how to tweak and extend your portfolio.
+                  </div>
+                </li>
+                <li className="flex">
+                  <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                  <div className="inline-block">
+                    I Guarantee a coming soon page will be up within 24 hours of
+                    receiving your domain name
+                  </div>
+                </li>
+                <li className="flex">
+                  <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                  <div className="inline-block">
+                    I Guarantee the first draft of your portfolio page will be
+                    up within a week of receiving the Brand Questionnaire
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="my-10 flex justify-center">
+              <PlusIcon className="h-12 w-12 text-synthwave-500" />
+            </div>
+            <ul className="list-inside list-none font-d-din text-lg leading-8 text-gray-300">
+              <li className="flex">
+                <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                <div className="inline-block">
+                  On-demand Advice and Motivation on Slack (12h/7 days a week
+                  guarantee)
+                </div>
+              </li>
+              <li className="flex">
+                <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                <div className="inline-block">
+                  10% discount on AI resume optimization tool
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 function SocialLink({
   icon: Icon,
@@ -432,65 +529,46 @@ function SocialLink({
 
 function AboutMe() {
   return (
-    <div className="relative isolate overflow-hidden bg-synthwave-900 py-16 sm:py-24">
-      <div className="relative mx-auto flex max-w-7xl flex-col px-6 lg:px-8  xl:flex-row">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
-            Meet Stefan
-          </p>
-          <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Why am I doing this?
-          </h2>
-          <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            I’m Stefan Wullems, a tech career coach who helps Web Developers
-            like you progress in their careers. I have 7 years of experience as
-            a software developer, 5 of which have been in the workforce, facing
-            the same kinds of problems we are talking about here and that you
-            are facing today.
-            <br />
-            <br />
-            I’ve built this program to guide you through those actions that move
-            you further away from the nightmare job and closer towards the dream
-            job.
-            <br />
-            <br />I have carefully crafted step-by-step systems, checklists, and
-            templates to help you improve on The Eight Factors. I will continue
-            adding more for the foreseeable future.
-            <br />
-            <br />
-            Some examples:
-          </p>
-          <ul className="mt-6 list-inside list-disc font-d-din text-lg leading-8 text-gray-300">
-            <li>
-              Identify unique high-value skills to build rather than commodity
-              skills
-            </li>
-            <li>Formulate a growth plan to negotiate a raise or promotion.</li>
-            <li>Build a business case for a tool you love. </li>
-            <li>Advice on how to prepare for a tech interview. </li>
-            <li>Creating an optimized tech resume and portfolio.</li>
-          </ul>
-          <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            Most of these resources can be found for free on my website, but
-            this one-on-one coaching program is for people who want to take the
-            fast and direct path. If you’re interested, send me a LinkedIn DM,
-            and let’s talk!
-          </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://www.linkedin.com/in/stefan-wullems-572854242/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
+    <div className="p-6">
+      <div className="overflow-hidden rounded-xl border  border-synthwave-500 bg-gradient-to-br from-synthwave-900 from-70% to-synthwave-500 py-4 sm:py-4">
+        <div className=" mx-auto flex max-w-7xl flex-col items-center px-6 lg:px-8  xl:flex-row">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-500">
+              Meet Stefan
+            </p>
+            <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              Why am I doing this?
+            </h2>
+            <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
+              I’m Stefan Wullems, an IT career coach who helps Web Developers
+              like you progress in their careers. I have 7 years of experience
+              as a software developer, 5 of which have been in the workforce.
+              <br />
+              <br />A challenge I faced was that I worked hard and a lot, but I
+              didn‘t finish projects. Years deep in my career and I didn‘t have
+              anything to show.
+              <br />
+              <br /> To my dismay, I found it difficult to convince others of
+              the value I knew I could bring without going the extra mile to
+              prove it. Everytime, it felt like I started from scratch because I
+              didn‘t have any work that could speak for itself.
+              <br />
+              <br />I created the Web Dev Rocket program so that you can learn
+              from this mistake without the scar. We will build and finish
+              awesome projects and study hard to earn prestigious certificates!
+              You‘ll find companies and teammates will take great interest in
+              you!
+            </p>
+            {button2}
+          </div>
+          <div className="flex w-full justify-center px-10 py-10 sm:px-40 xl:px-0 xl:py-40 xl:pl-10">
+            <Image
+              sizes="(min-width: 512px) 16rem, 10rem"
+              className="aspect-square rotate-3 rounded-2xl bg-gray-100 object-cover dark:bg-gray-800"
+              src={withMaki}
+              alt="Stefan Wullems"
             />
           </div>
-        </div>
-        <div className="flex w-full justify-center px-10 py-10 sm:px-40 xl:px-0 xl:py-40 xl:pl-10">
-          <Image
-            sizes="(min-width: 512px) 16rem, 10rem"
-            className="aspect-square rotate-3 rounded-2xl bg-gray-100 object-cover dark:bg-gray-800"
-            src={withMaki}
-            alt="Stefan Wullems"
-          />
         </div>
       </div>
     </div>
@@ -503,8 +581,9 @@ export default function WebDevRocket() {
       <Hero />
       <SEOKeywords />
       <AboutYou />
-      <TheEightFactors />
       <AboutMe />
+      <TheEightFactors />
+      <Bonuses />
     </main>
   )
 }
