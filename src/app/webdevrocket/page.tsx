@@ -32,7 +32,6 @@ import k8sAppDevLogo from './images/certified-k8s-app-dev.png'
 
 const program = {
   author: 'Stefan Wullems',
-  date: '2024-03-19',
   title: 'The Web Dev Rocket',
   description:
     'Work with a Tech Career Coach to achieve goals common to Web Engineers like you.',
@@ -56,7 +55,7 @@ export const metadata = {
     ],
   },
 }
-const COUNT_DOWN_DATE = new Date('2024-03-31:23:59:59')
+const COUNT_DOWN_DATE = new Date('2024-04-07:23:59:59')
 const CTA = 'https://bit.ly/coachstefan'
 
 const KEYWORDS = [
@@ -113,34 +112,6 @@ function Hero() {
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function SEOKeywords() {
-  return (
-    <div className="relative isolate mx-10 mt-10 overflow-hidden rounded-3xl border  border-synthwave-300 py-12 shadow-md  shadow-synthwave-300 sm:py-16">
-      <div className="absolute inset-0 z-0">
-        <div
-          className=" absolute inset-0 bg-gradient-to-br from-synthwave-300 to-synthwave-900 to-30%"
-          aria-hidden="true"
-        ></div>
-      </div>
-      <div className="relative mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="mt-6 font-d-din text-lg leading-8 text-gray-200">
-            Work with an IT Career Coach to build your tech skills and make them
-            visible. We will work on building impressive tech projects, earning
-            prestigious IT related certifications, and I will build a manage a
-            portfolio page for you to Work with a Tech Career Coach to achieve
-            goals common to Web Engineers like you. For example, increase your
-            software engineering level, compose a growth plan to negotiate a
-            raise, identify high-value tech training, go IT Job Hunting, get
-            advice on how to prepare for a tech interview, and build an
-            optimized tech resume.
-          </p>
         </div>
       </div>
     </div>
@@ -212,7 +183,7 @@ const button = (
   <div className="mt-6">
     <a
       href={CTA}
-      className="rounded-full  border border-synthwave-300 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-300"
+      className="rounded-full border border-synthwave-300 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-6 py-4 font-d-din-bold text-xl leading-8 text-gray-300 shadow-md shadow-synthwave-300 hover:border-synthwave-500 hover:shadow-synthwave-500"
     >
       Free Discovery Call
     </a>
@@ -223,7 +194,7 @@ const button2 = (
   <div className="mt-6">
     <a
       href={CTA}
-      className="mt-6 rounded-full  border border-synthwave-500 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-500"
+      className="mt-6 rounded-full  border border-synthwave-500 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-6 py-4 font-d-din-bold text-xl leading-8 text-gray-300 shadow-md shadow-synthwave-500 hover:border-synthwave-300 hover:shadow-synthwave-300"
     >
       Free Discovery Call
     </a>
@@ -511,13 +482,6 @@ function Bonuses() {
               <li className="flex">
                 <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
                 <div className="inline-block">
-                  Free 30 Min Discovery Meeting where we explore your Goals and
-                  see if we fit
-                </div>
-              </li>
-              <li className="flex">
-                <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
-                <div className="inline-block">
                   On-demand Advice and Motivation on Slack (12h/7 days a week
                   guarantee)
                 </div>
@@ -529,7 +493,6 @@ function Bonuses() {
                 </div>
               </li>
             </ul>
-            {button2}
           </div>
         </div>
       </div>
@@ -598,6 +561,29 @@ function AboutMe() {
   )
 }
 
+function CtaSection() {
+  return (
+    <div className="relative isolate mx-10 mt-10 overflow-hidden rounded-3xl border  border-synthwave-300 py-12 shadow-md  shadow-synthwave-300 sm:py-16">
+      <div className="absolute inset-0 z-0">
+        <div
+          className=" absolute inset-0 bg-gradient-to-tl from-synthwave-300 to-synthwave-900 to-30%"
+          aria-hidden="true"
+        ></div>
+      </div>
+      <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-center px-6 lg:px-8">
+        <div className="max-w-2xl lg:mx-0">
+          <p className="mt-6 font-d-din text-lg leading-8 text-gray-200">
+            Still unsure? Book a free, no strings attached discovery call in
+            less than 30 seconds. We‘ll can explore your goals and see how well
+            we fit. I‘m looking forward to meeting you!
+          </p>
+        </div>
+        <div>{button}</div>
+      </div>
+    </div>
+  )
+}
+
 export default function WebDevRocket() {
   return (
     <main className="bg-synthwave-900">
@@ -607,6 +593,7 @@ export default function WebDevRocket() {
       <AboutMe />
       <TheEightFactors />
       <Bonuses />
+      <CtaSection />
     </main>
   )
 }

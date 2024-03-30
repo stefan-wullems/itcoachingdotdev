@@ -8,18 +8,18 @@ function getCountdown(countDownDate: Date) {
 
   // Calculate the distance between now and the count down date
   const distance = countDownDate.getTime() - now
-  const daysBetween = Math.floor(distance / (1000 * 60 * 60 * 24))
 
   // Calculate hours, minutes, and seconds
-  const hours =
-    Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) +
-    daysBetween * 24
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+  )
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
   const seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
   return (
     'T-' +
-    `${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`
+    `${days < 10 ? '0' : ''}${days}:${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`
   )
 }
 
@@ -35,7 +35,7 @@ export function CountdownTimer({ countDownDate }: { countDownDate: Date }) {
   }, [countDownDate])
 
   return (
-    <div className="bg-synthwave-900 font-gothic relative flex h-24 flex-col justify-center bg-opacity-80">
+    <div className="relative flex h-24 flex-col justify-center bg-synthwave-900 bg-opacity-80 font-gothic">
       <Link href={'/'} className="absolute inset-0 left-4 top-8 ">
         &larr; Home
       </Link>
