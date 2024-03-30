@@ -57,6 +57,7 @@ export const metadata = {
   },
 }
 const COUNT_DOWN_DATE = new Date('2024-03-31:23:59:59')
+const CTA = 'https://bit.ly/coachstefan'
 
 const KEYWORDS = [
   'apply to web developer jobs', // 1k to 10k
@@ -208,15 +209,25 @@ function AboutYou() {
 }
 
 const button = (
-  <button className="mt-6 rounded-full  border border-synthwave-300 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-300">
-    Get in touch
-  </button>
+  <div className="mt-6">
+    <a
+      href={CTA}
+      className="rounded-full  border border-synthwave-300 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-300"
+    >
+      Free Discovery Call
+    </a>
+  </div>
 )
 
 const button2 = (
-  <button className="mt-6 rounded-full  border border-synthwave-500 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-500">
-    Get in touch
-  </button>
+  <div className="mt-6">
+    <a
+      href={CTA}
+      className="mt-6 rounded-full  border border-synthwave-500 bg-gradient-to-br from-gray-700 from-5% to-synthwave-900 px-4 py-2 font-d-din-bold text-lg leading-8 text-gray-300 shadow-md shadow-synthwave-500"
+    >
+      Free Discovery Call
+    </a>
+  </div>
 )
 
 const LEVERS = [
@@ -446,7 +457,7 @@ function Bonuses() {
       <div className="mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
         <div className="mx-auto max-w-4xl lg:mx-0">
           <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-500">
-            Bonuses
+            Free extras
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
             What else do you get?
@@ -518,6 +529,7 @@ function Bonuses() {
                 </div>
               </li>
             </ul>
+            {button2}
           </div>
         </div>
       </div>
