@@ -1,7 +1,5 @@
 import { CheckIcon, PlusIcon } from '@heroicons/react/20/solid'
 
-import withMaki from '@/images/with-maki.jpg'
-
 export function Bonuses() {
   return (
     <div className=" bg-gradient-to-b from-synthwave-900 from-10% via-synthwave-500/30 to-synthwave-900 to-90% py-16 sm:py-24">

@@ -35,7 +35,7 @@ const COUNT_DOWN_DATE = new Date('2024-04-07:23:59:59')
 
 export default function WebDevRocket() {
   return (
-    <main className="bg-synthwave-900">
+    <main className="bg-synthwave-900 pb-10">
       <Hero countDownDate={COUNT_DOWN_DATE} />
       <Motivation />
       <AboutMe />

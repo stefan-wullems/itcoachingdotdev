@@ -2,7 +2,7 @@ import { CTAButton } from './CTAButton'
 
 export function CTA() {
   return (
-    <div className="relative isolate mx-10 mt-10 overflow-hidden rounded-3xl border  border-synthwave-300 py-12 shadow-md  shadow-synthwave-300 sm:py-16">
+    <div className="relative isolate m-10 overflow-hidden rounded-3xl border  border-synthwave-300 py-12 shadow-md  shadow-synthwave-300 sm:py-16">
       <div className="absolute inset-0 z-0">
         <div
           className=" absolute inset-0 bg-gradient-to-tl from-synthwave-300 to-synthwave-900 to-30%"
