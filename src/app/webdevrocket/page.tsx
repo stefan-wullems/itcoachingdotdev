@@ -496,6 +496,13 @@ function Bonuses() {
               <li className="flex">
                 <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
                 <div className="inline-block">
+                  Free 30 Min Discovery Meeting where we explore your Goals and
+                  see if we fit
+                </div>
+              </li>
+              <li className="flex">
+                <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                <div className="inline-block">
                   On-demand Advice and Motivation on Slack (12h/7 days a week
                   guarantee)
                 </div>
