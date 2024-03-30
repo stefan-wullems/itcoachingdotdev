@@ -130,11 +130,15 @@ function SEOKeywords() {
       <div className="relative mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-200">
-            Work with a Tech Career Coach to achieve goals common to Web
-            Engineers like you. For example, increase your software engineering
-            level, compose a growth plan to negotiate a raise, identify
-            high-value tech training, go IT Job Hunting, get advice on how to
-            prepare for a tech interview, and build an optimized tech resume.
+            Work with an IT Career Coach to build your tech skills and make them
+            visible. We will work on building impressive tech projects, earning
+            prestigious IT related certifications, and I will build a manage a
+            portfolio page for you to Work with a Tech Career Coach to achieve
+            goals common to Web Engineers like you. For example, increase your
+            software engineering level, compose a growth plan to negotiate a
+            raise, identify high-value tech training, go IT Job Hunting, get
+            advice on how to prepare for a tech interview, and build an
+            optimized tech resume.
           </p>
         </div>
       </div>
@@ -586,7 +590,7 @@ export default function WebDevRocket() {
   return (
     <main className="bg-synthwave-900">
       <Hero />
-      <SEOKeywords />
+      {/* <SEOKeywords /> */}
       <AboutYou />
       <AboutMe />
       <TheEightFactors />
