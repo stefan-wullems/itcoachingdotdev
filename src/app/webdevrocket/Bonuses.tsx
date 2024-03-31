@@ -14,20 +14,48 @@ export function Bonuses() {
           <div className="mt-6">
             <div className="rounded-xl bg-gradient-to-br from-synthwave-500 to-synthwave-900 to-20% p-6 shadow-md shadow-synthwave-500">
               <h3 className="text-center font-gothic text-2xl font-bold tracking-tight text-white sm:text-2xl">
-                The Comprehensive “Portfolio Management” Bundle
+                The Brand Consistensy Bundle
               </h3>
               <ul className="mt-6 list-inside list-none font-d-din text-lg leading-8 text-gray-300">
                 <li className="flex">
                   <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
                   <div className="inline-block">
-                    Quick Portfolio Domain Name checklist
+                    The 60 Min Brand Questionnaire for Quick Design and Content
+                    Drafting
                   </div>
                 </li>
                 <li className="flex">
                   <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
                   <div className="inline-block">
-                    The 60 Min Brand Questionnaire for Quick Design and Content
-                    Drafting
+                    The Github Profile Brand Consistensy Checklist
+                  </div>
+                </li>
+                <li className="flex">
+                  <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                  <div className="inline-block">
+                    The LinkedIn Profile Brand Consistensy Checklist
+                  </div>
+                </li>
+                <li className="flex">
+                  <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                  <div className="inline-block">
+                    The X Profile Brand Consistensy Checklist
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="my-10 flex justify-center">
+              <PlusIcon className="h-12 w-12 text-synthwave-500" />
+            </div>
+            <div className="rounded-xl bg-gradient-to-br from-synthwave-500 to-synthwave-900 to-20% p-6 shadow-md shadow-synthwave-500">
+              <h3 className="text-center font-gothic text-2xl font-bold tracking-tight text-white sm:text-2xl">
+                The Comprehensive Portfolio Management Bundle
+              </h3>
+              <ul className="mt-6 list-inside list-none font-d-din text-lg leading-8 text-gray-300">
+                <li className="flex">
+                  <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
+                  <div className="inline-block">
+                    Simple Portfolio Domain Name Guidelines
                   </div>
                 </li>
                 <li className="flex">

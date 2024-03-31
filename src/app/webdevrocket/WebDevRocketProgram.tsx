@@ -77,7 +77,7 @@ export function WebDevRocketProgram() {
           </div>
           <div className="mt-10">
             <h3 className=" text-center font-gothic text-2xl font-bold tracking-tight text-white  sm:text-5xl">
-              Using Reputable Tools
+              Use Interesting Tools
             </h3>
             <div className="flex flex-col items-center justify-evenly py-10 opacity-50 sm:flex-row">
               <div className="py-6 sm:py-12">
