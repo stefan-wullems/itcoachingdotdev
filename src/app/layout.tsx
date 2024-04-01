@@ -45,7 +45,7 @@ export default function RootLayout({
         </Providers>
       </body>
       <Script id="hotjar">
-        {`<!-- Hotjar Tracking Code for https://www.itcoaching.dev -->
+        {`
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
