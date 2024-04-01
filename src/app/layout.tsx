@@ -45,9 +45,7 @@ export default function RootLayout({
         </Providers>
       </body>
       <Script id="hotjar">
-        {`
-<script>
-    (function(h,o,t,j,a,r){
+        {`function h(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:3927183,hjsv:6};
         a=o.getElementsByTagName('head')[0];
@@ -55,7 +53,7 @@ export default function RootLayout({
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>`}
+`}
       </Script>
     </html>
   )
