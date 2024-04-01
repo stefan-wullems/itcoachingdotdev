@@ -92,12 +92,12 @@ export function Bonuses() {
                   guarantee)
                 </div>
               </li>
-              <li className="flex">
+              {/* <li className="flex">
                 <CheckIcon className="mr-2 h-6 w-6 text-emerald-500" />{' '}
                 <div className="inline-block">
                   10% discount on AI resume optimization tool
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
