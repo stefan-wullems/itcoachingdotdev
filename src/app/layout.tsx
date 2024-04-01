@@ -45,7 +45,7 @@ export default function RootLayout({
         </Providers>
       </body>
       <Script id="hotjar">
-        {`function h(h,o,t,j,a,r){
+        {`(function (h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:3927183,hjsv:6};
         a=o.getElementsByTagName('head')[0];
