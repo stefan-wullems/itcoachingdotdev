@@ -9,6 +9,9 @@ export default {
   plugins: [typographyPlugin],
   theme: {
     extend: {
+      backgroundImage: {
+        stars: "url('/stars.png')",
+      },
       animation: {
         'ping-xs': 'ping-xs 2s cubic-bezier(0, 0, 0.2, 0.1) infinite',
         'ping-xs-offset':
@@ -30,6 +33,7 @@ export default {
           '800': '#2f0045',
           '900': '#090019',
         },
+        gold: '#FFD700',
       },
       fontFamily: {
         gothic: ['var(--bank-gothic)'],

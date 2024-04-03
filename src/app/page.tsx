@@ -20,6 +20,8 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import barbell from '@/images/photos/barbell.jpg'
 import dumbbell2 from '@/images/photos/dumbbell2.jpeg'
+import avatarImage from '@/images/avatar.png'
+import avatarNoBGImage from '@/images/avatarthumb2.png'
 
 import amsterdam from '@/images/photos/amsterdam.jpg'
 
@@ -279,13 +281,43 @@ function Photos() {
   )
 }
 
+function Hero() {
+  return (
+    <div className="relative bg-gradient-to-r from-gray-950 to-gray-700 font-d-din">
+      <div className="grid grid-cols-12">
+        <div className="col-span-6 px-6 pb-24 pt-10 sm:pb-32 lg:pb-56 lg:pl-12 lg:pt-32">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h1 className="mt-24 inline-block bg-gradient-to-b from-synthwave-300 via-synthwave-500 to-synthwave-300 bg-clip-text  font-d-din-bold text-4xl tracking-tight text-transparent drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] sm:mt-10 sm:text-8xl">
+              Take Agency Over Your Career
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-200">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+              fugiat aliqua.
+            </p>
+          </div>
+        </div>
+        <div className="relative col-span-4 flex items-end justify-end">
+          <Image
+            className="absolute bottom-0 h-[500px] w-[500px] "
+            src={avatarNoBGImage}
+            alt=""
+          />
+        </div>
+        <div className="col-span-2 h-full bg-black"></div>
+      </div>
+    </div>
+  )
+}
+
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
 
   return (
     <Layout>
-      <Container className="mt-9">
-        <div className="max-w-2xl">
+      {/* <Hero /> */}
+      <Container className="mt-6">
+        <div className=" max-w-2xl">
           <h1 className="font-d-din-bold text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-gray-100">
             Stefan Wullems - Tech Career Coach
           </h1>
