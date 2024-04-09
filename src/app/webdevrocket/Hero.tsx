@@ -5,11 +5,13 @@ import { CountdownTimer } from './CountdownTimer'
 
 const KEYWORDS = [
   'javascript mentorship', // 10 to 100
-  'get hired as a web developer', // 1k to 10k
+  'get hired', // 1k to 10k
   'build impressive apps', // 100 to 1k
   'get promoted', // 10 to 100
   'earn prestigious certifications',
   'use exciting technologies',
+  'learn functional programming',
+  'master typescript',
 ]
 
 export function Hero({ countDownDate }: { countDownDate: Date }) {
@@ -40,7 +42,7 @@ export function Hero({ countDownDate }: { countDownDate: Date }) {
           <div className="mx-auto max-w-4xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="relative w-full max-w-xl flex-col text-center lg:shrink-0 xl:max-w-4xl ">
               <h2 className="min-w-md mb-4 font-gothic text-2xl text-synthwave-300">
-                AN COACHING AND MENTORSHIP PROGRAM TAILORED TO WEB DEVELOPERS
+                A COACHING AND MENTORSHIP PROGRAM FOR WEB DEVELOPERS
               </h2>
               <h1 className="min-w-md font-gothic text-6xl font-bold tracking-tight text-white sm:text-7xl">
                 THE WEB DEV ROCKET
