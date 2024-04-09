@@ -13,27 +13,27 @@ export function AboutMe() {
               Meet Stefan
             </p>
             <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Why am I doing this?
+              I’m passionate about supporting passionate people.
             </h2>
             <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
               I’m Stefan Wullems, an IT career coach who helps Web Developers
               like you progress in their careers. I have 7 years of experience
-              as a software developer, 5 of which have been in the workforce.
+              as a software developer, and I’m an expert in{' '}
+              <strong className="font-d-din-bold">TypeScript</strong> and{' '}
+              <strong className="font-d-din-bold">
+                Functional Programming
+              </strong>
+              .
               <br />
-              <br />A challenge I faced was that I worked hard and a lot, but I
-              didn‘t finish projects. Years deep in my career and I didn‘t have
-              anything to show.
+              <br />I created the Web Dev Rocket program because it is exactly
+              what I would have loved when I was ramping up my career. Someone
+              to support and accelerate my growth, and someone to help me build
+              cool stuff. Together is more fun than alone.
               <br />
-              <br /> To my dismay, I found it difficult to convince others of
-              the value I knew I could bring without going the extra mile to
-              prove it. Everytime, it felt like I started from scratch because I
-              didn‘t have any work that could speak for itself.
               <br />
-              <br />I created the Web Dev Rocket program so that you can learn
-              from this mistake without the scar. We will build and finish
-              awesome projects and study hard to earn prestigious certificates!
-              You‘ll find companies and teammates will take great interest in
-              you!
+              If you think your career would benefit from having someone
+              experienced around you who’s only goal is to help you grow. Claim
+              your free call now!
             </p>
             <CTAButton theme="synthwave-500" />
           </div>

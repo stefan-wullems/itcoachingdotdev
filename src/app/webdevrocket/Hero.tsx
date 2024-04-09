@@ -4,12 +4,11 @@ import landscapeRocketCentered from './images/lanscaperocketcentered.png'
 import { CountdownTimer } from './CountdownTimer'
 
 const KEYWORDS = [
+  'javascript mentorship', // 10 to 100
   'apply to web developer jobs', // 1k to 10k
-  'go fullstack', // 10 to 100
   'promotion to senior', // 10 to 100
   'earn above the average web developer salary', // 100 to 1k
-  'prepare for the technical interview', // 100 to 1k
-  'negotiate more study time',
+  'build web apps', // 100 to 1k
 ]
 
 export function Hero({ countDownDate }: { countDownDate: Date }) {
@@ -40,17 +39,20 @@ export function Hero({ countDownDate }: { countDownDate: Date }) {
           <div className="mx-auto max-w-4xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="relative w-full max-w-xl flex-col text-center lg:shrink-0 xl:max-w-4xl ">
               <h2 className="min-w-md mb-4 font-gothic text-2xl text-synthwave-300">
-                AN IT CAREER COACHING PROGRAM TAILORED TO WEB DEVELOPERS
+                AN COACHING AND MENTORSHIP PROGRAM TAILORED TO WEB DEVELOPERS
               </h2>
               <h1 className="min-w-md font-gothic text-6xl font-bold tracking-tight text-white sm:text-7xl">
                 THE WEB DEV ROCKET
               </h1>
               <p className="min-w-md mt-8 font-gothic text-xl leading-8 text-gray-300 lg:max-w-none">
-                Take agency over your career.
+                JUST BUILD COOL STUFF
               </p>
-              <ul className="min-w-md text-md mt-60 font-gothic leading-8 text-gray-200 lg:max-w-none">
+              <ul className="min-w-md mt-60 font-gothic text-lg leading-8 text-white lg:max-w-none">
                 {KEYWORDS.map((keyword) => (
-                  <li key={keyword} className="mx-4 inline-block">
+                  <li
+                    key={keyword}
+                    className="mx-4 inline-block drop-shadow-[0_1.6px_1.6px_rgba(255,0,255,1)]"
+                  >
                     {keyword}
                   </li>
                 ))}

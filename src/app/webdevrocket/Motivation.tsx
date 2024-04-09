@@ -9,50 +9,41 @@ export function Motivation() {
       <div className="relative mx-auto flex max-w-7xl justify-center px-6 lg:px-8">
         <div className="mx-auto max-w-3xl lg:mx-0">
           <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
-            Incomplete work
+            Just build cool stuff
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Do you work hard but still struggle with these things:
+            Do you want your skills to skyrocket?
           </h2>
+          <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
+            Getting started or ramping up your career in tech requires you to be
+            skilled, but building skill isn‘t easy. I see many people make the
+            following mistakes:
+          </p>
           <ul className="mt-6 list-inside list-disc font-d-din text-lg leading-8 text-gray-300">
-            <li>Difficulty finding a good high paying job</li>
-            <li>Not being paid your worth from current employers</li>
+            <li>Spending too much time on LeetCode</li>
+            <li>Being stuck in course hell</li>
+            <li>Studying tools rather than building things</li>
             <li>
-              Lack of opportunities to take on more responsibility or get
-              promoted{' '}
+              Working on meta problems like typing-speed and editor
+              configuration
             </li>
-            <li>Little to show for your work</li>
           </ul>
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            Hard work pays off, but it‘s possible to work hard in very
-            inefficient ways. Often I see driven developers, including my
-            younger self, work hard but make one mistake that will cause much of
-            their work to be in vain.{' '}
-            <strong className="font-d-din-bold">
-              Under the spell of excitement, they start project after project,
-              rarely finishing one.
-            </strong>
+            In the end, the best way to get better at building is by building
+            stuff. But if you have never built something start-to-end by
+            yourself, it can be quite a daunting task. What do you build? What
+            tools to use? Where to start? How to organize the project? How do I
+            stay motivated? When am I even done? Where do I get the time? On and
+            on and on.
             <br />
             <br />
-            Not only do{' '}
-            <strong className="font-d-din-bold">
-              we miss out on much important experience
-            </strong>
-            , it also becomes{' '}
-            <strong className="font-d-din-bold">
-              difficult to prove our skill and work ethic in moments it really
-              matters
-            </strong>{' '}
-            (e.g. applying for a job, or your boss is trying to convince his
-            boss that you are a good candidate for a promotion)
-            <br />
-            <br />I designed the{' '}
-            <strong className="font-d-din-bold">Web Dev Rocket</strong> to help
-            driven individuals like you sidestep this problem and{' '}
-            <strong className="font-d-din-bold">
-              ensure your hard work is rewarding
-            </strong>
-            . We‘ll finish awesome projects and we‘ll make them presentable too.
+            The Web Dev Rocket is a coaching and mentorship program aimed to
+            help you solve these problems. You‘ll not only build projects,
+            you‘ll learn more quickly as you solve real world problems, and at
+            the end you can share your work and your experiences to meet new
+            people or impress potential employers. That‘s the power of just
+            building cool stuff. It pays dividends in multiple areas of your
+            career!
           </p>
           <CTAButton theme="synthwave-300" />
         </div>

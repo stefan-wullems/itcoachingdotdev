@@ -39,10 +39,10 @@ export function CountdownTimer({ countDownDate }: { countDownDate: Date }) {
       <Link href={'/'} className="absolute inset-0 left-4 top-8 ">
         &larr; Home
       </Link>
-      <p id="countdown" className="text-center text-2xl text-white">
+      {/* <p id="countdown" className="text-center text-2xl text-white">
         {countdown}
-      </p>
-      <p className="text-center text-xs text-white">START OF NEXT COHORT</p>
+      </p> */}
+      {/* <p className="text-center text-xs text-white">START OF NEXT COHORT</p> */}
     </div>
   )
 }

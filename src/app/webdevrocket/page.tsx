@@ -41,7 +41,7 @@ export default function WebDevRocket() {
         <Motivation />
         <AboutMe />
         <WebDevRocketProgram />
-        <Bonuses />
+        {/* <Bonuses /> */}
         <CTA />
       </div>
     </main>

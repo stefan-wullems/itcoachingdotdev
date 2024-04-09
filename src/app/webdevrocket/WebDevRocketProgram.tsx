@@ -1,5 +1,5 @@
 import gqlLogo from './images/gql.png'
-import rustLogo from './images/rust.png'
+import tsLogo from './images/ts4.png'
 import webAssemblyLogo from './images/webassembly.png'
 
 import awsCertDevAssLogo from './images/aws-certified-dev-associate.png'
@@ -11,12 +11,11 @@ const PROJECTS = [
   'Open Source Libraries',
   'Games',
   'Programming Languages',
-  'Game Engines',
-  'Blockchain Applications',
+  'Web Apps',
   'AI Applications',
   'Social Media Clones',
-  'IoT Applications',
-  'Handwritten LLMs',
+  'Webshops',
+  'Portfolios',
   'UI Libraries',
   'Web Frameworks',
 ]
@@ -25,40 +24,35 @@ export function WebDevRocketProgram() {
   return (
     <div className="bg-gradient-to-b from-synthwave-900 from-10% via-synthwave-300/30 to-synthwave-900 to-90% py-16 sm:py-24">
       <div className=" mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="mx-auto max-w-3xl lg:mx-0">
           <p className="font-gothic text-2xl font-semibold leading-7 text-synthwave-300">
             The Web Dev Rocket Program
           </p>
           <h2 className="font-gothic text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            What will you get?
+            The Career Booster
           </h2>
         </div>
         <div className="grid gap-10 sm:grid-cols-2">
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            I will design, implement, deploy and manage{' '}
+            I will help you build the projects that excite you most by helping
+            you plan out the project, stay motivated, accountable and most
+            importantly on-track. I‘ll use my expertise to help you make
+            difficult technical decisions, teach you what you need to know and
+            to review your work to ensure top quality.{' '}
             <strong className="font-d-din-bold">
-              a portfolio website to establish your personal brand and show off
-              your skills
+              You‘ll not only build faster, but grow faster too!
             </strong>
-            . This portfolio will have a brag document to highlight your
-            achievements and a fully functional blog to broadcast your
-            experience to the world in a professional way.
           </p>
           <p className="mt-6 font-d-din text-lg leading-8 text-gray-300">
-            Additionally, I will help you expand your brag document with{' '}
+            Optionally, I‘ll teach you how to get hired or make that job switch.
+            A skill which can save you 10.000s of euros over your career in
+            money not lost to recruiter commisions. I‘ll help you optimise your
+            resume, github profile & social media accounts, help you earn the
+            most valuable certifications and help you make your projects
+            presentable.{' '}
             <strong className="font-d-din-bold">
-              weekly 1-on-1 accountability coaching sessions.
-            </strong>{' '}
-            We will make a growth plan that aligns with your goals and interests
-            and I will keep you focused and moving forward. You‘ll{' '}
-            <strong className="font-d-din-bold">
-              build impressive projects using exciting tools
+              Better job = better life!
             </strong>
-            , and you‘ll{' '}
-            <strong className="font-d-din-bold">
-              earn prestigious certifications
-            </strong>
-            .
           </p>
         </div>
 
@@ -89,7 +83,7 @@ export function WebDevRocketProgram() {
                 />
               </div>
               <div className="py-6 sm:py-12">
-                <Image src={rustLogo} alt="Rust" width={150} height={150} />
+                <Image src={tsLogo} alt="TypeScript" width={150} height={150} />
               </div>
               <div className="py-6 sm:py-12">
                 <Image src={gqlLogo} alt="GraphQL" width={150} height={150} />
