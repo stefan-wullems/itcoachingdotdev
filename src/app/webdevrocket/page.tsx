@@ -9,8 +9,7 @@ import { CTA } from './CTA'
 const program = {
   author: 'Stefan Wullems',
   title: 'The Web Dev Rocket',
-  description:
-    'Work with a Tech Career Coach to achieve goals common to Web Engineers like you.',
+  description: 'Just build cool stuff',
 }
 
 export const metadata = {
@@ -24,8 +23,8 @@ export const metadata = {
     images: [
       {
         url: `https://stefanwullemscoaching.com/og-webdevrocket.png`,
-        width: 2170,
-        height: 1150,
+        width: 2730,
+        height: 1324,
         alt: program.title,
       },
     ],
