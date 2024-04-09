@@ -37,9 +37,16 @@ export default function WebDevRocket() {
     <main className="bg-synthwave-900 ">
       <div className="pb-10">
         <Hero countDownDate={COUNT_DOWN_DATE} />
-        <Motivation />
-        <AboutMe />
-        <WebDevRocketProgram />
+        <div id="motivation">
+          <Motivation />
+        </div>
+        <div id="about-me">
+          <AboutMe />
+        </div>
+        <div id="program">
+          <WebDevRocketProgram />
+        </div>
+
         {/* <Bonuses /> */}
         <CTA />
       </div>
