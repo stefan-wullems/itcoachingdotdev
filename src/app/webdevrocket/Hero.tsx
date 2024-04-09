@@ -5,10 +5,11 @@ import { CountdownTimer } from './CountdownTimer'
 
 const KEYWORDS = [
   'javascript mentorship', // 10 to 100
-  'apply to web developer jobs', // 1k to 10k
-  'promotion to senior', // 10 to 100
-  'earn above the average web developer salary', // 100 to 1k
-  'build web apps', // 100 to 1k
+  'get hired as a web developer', // 1k to 10k
+  'build impressive apps', // 100 to 1k
+  'get promoted', // 10 to 100
+  'earn prestigious certifications',
+  'use exciting technologies',
 ]
 
 export function Hero({ countDownDate }: { countDownDate: Date }) {
