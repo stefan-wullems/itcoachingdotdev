@@ -1,0 +1,142 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import { CTAButton } from "@/app/webdevrocket/CTAButton"
+import { Img } from "./Images"
+
+export const article = {
+  author: 'Stefan Wullems',
+  date: '2024-04-10',
+  title: 'Reverse Engineering The Jobhunt',
+  tags: [],
+  description:
+    'Drill down into the hiring process to understand how to find a job',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+  openGraph: {
+    title: article.title,
+    description: article.description,
+    type: 'article',
+    url: `https://stefanwullemscoaching.com/articles/reverse-engineering-the-jobhunt`,
+    authors: [article.author],
+    images: [
+      {
+        url: `https://stefanwullemscoaching.com/og-rejh.jpg`,
+        alt: article.title,
+        width: 2386,
+        height: 1491,
+      },
+    ],
+  },
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Finding a job is hard and takes a lot of time. The frustrating thing is that success is largely out of your hands.
+
+In the end, you don’t decide whether you get hired or not, but this is not a very empowering perspective. It leaves you weak and powerless. It’s time for a reframe.
+
+1. **Don’t focus on the outcomes; focus on the inputs.**
+
+Being unemployed is often a painful situation, and as humans, we’re programmed to try to get out of painful situations as soon as possible. However, for some things, it’s just better to take your time to learn how to do them well instead of rushing. Even if that means accepting and embracing the pain.
+
+One way to get out of urgency mode is to start focusing on inputs instead of the desired outcome. In other words, don’t worry about getting hired; you don’t have control over that anyway. Instead, you could focus on what you can control. This gives you all the power back, and it will make it easier to do the work necessary to get the outcome anyway.
+
+It’s easier to stay motivated because we can reframe our efforts from “I applied to 20 jobs today and still nothing” to “I applied to 20 jobs today!”. If you think about it, that’s a big deal, and you can be proud of yourself.
+
+Software Engineering is a craft, so why not put on your craftsman hat and focus on mastering the skill of finding a job?
+
+1. **Focus on the primary actions**.
+
+There are lots of inputs you can do to improve the odds of finding a job, but not every input is equally valuable. Still, because low-value inputs contribute somewhat to the goal of getting hired, we might talk ourselves into going all in on those inputs.
+
+Examples of low-value primary actions (in my humble opinion):
+
+- Solving tons of LeetCode problems
+- Following programming courses without building anything afterwards
+- Optimize your nonexistent productivity by learning Vim, touch typing, and a fancy keyword.
+
+Instead, we want to go hard with the highest-value actions. They end up improving our odds the most. The boring basics:
+
+- Let companies that need people know you are looking for a job (applying, networking, etc.)
+- Improve and display your building skills (build portfolio projects, get certified)
+- Act like the kind of person people would want to work with
+
+Focusing solely on the basics without doing anything fancy will make it almost impossible for you to find a job given enough time.
+
+1. **Find the bottleneck**
+
+Finding a job is like a pipeline, and there might be a failure somewhere in the pipeline that’s compromising the whole system. If you understand the pipeline, you can troubleshoot it and solve these critical problems.
+
+Let’s look at a simple application process from the company’s perspective
+
+- Receive application
+- Screen for related work experience
+- Look at your profile
+- Culture fit interview
+- Technical interview
+- Hired
+
+<Img imageIndex={0}/>
+
+Failing at any of these will cause you to lose the job.
+
+Let’s use it to solve a common problem.
+
+### I applied to like 200 companies, but I never hear anything back.
+
+We’re applying, so that’s good, but somewhere between the interview and application steps, something goes wrong. Let’s drill down:
+
+- Screen for related work experience
+- Look at profile
+
+<Img imageIndex={1}/>
+
+One of these steps is the perpetrator. This is what we should focus on, not preparing for the technical interview. That’s not solving the problem we’re experiencing.
+
+How would you go about improving each of these steps?
+
+**Screen for related work experience:**
+
+When working with a lot of applicants, companies usually pick out the ones that, on the surface, seem to be the best fit. If you don’t particularly stand out, you’re constantly at risk of not being taken into further consideration.
+
+What you can do to improve your odds:
+
+- Add a description to your resume summarizing the experience relevant to the company you’re applying to (yes, it’s allowed to send different resumes tailored to the company you’re applying to). This will make it easier to screen you, which is good because if a company has 100 applications, they might not want to take the time to parse your entire 4-page resume. Remember, in the end, this will end up in a human’s hands, so design it with that human in mind.
+- Reflect on previous unrelated work experience and see if you can identify skills relevant to the job you are applying to. For example, I was a fitness trainer before I got into software engineering, so I often stood in front of groups. As a result, I’m pretty comfortable with public speaking.
+
+**Look at your profile:**
+
+Employers usually examine your profile more thoroughly after you pass the screening phase, including your GitHub, portfolio, and social media accounts.
+
+What you can do to improve your odds:
+
+- Make all your GitHub projects public. In the beginning, you might make projects you’re ashamed of. You might think: “They’re a bit basic and don’t represent my current skills; I don’t want people to think this is how I write code nowadays.” In reality, the person looking at your profile is aware of this and just wants to see how curious you are, what kind of experiments you tried, and how you think. If you devised a hacky workaround in one of your first projects because you didn’t know how to do it “properly,” you might impress someone with your cleverness.
+- Build more portfolio projects, especially using the technologies you’re applying for. It shows you know how to **build**, which is much more important than knowing a lot of algorithms or having done a lot of courses. Use git, incremental development, and a project planner for bonus points. That’s the stuff you will be using at your job.
+- Present yourself and your work in a kind, authentic way. For your projects, write a nice README where you describe your goals (e.g., learn X and build Y), simple steps to spin it up locally, or already have it hosted somewhere so the person looking at your stuff can easily explore your work. Use nice pictures of yourself on your social media accounts and interact with others kindly.
+
+All right, with these changes, we’re now consistently being invited to the culture fit interview. Now, we start making it to the technical interview, but that’s where we start failing.
+
+<Img imageIndex={2}/>
+
+In the same way we did with the screening and profile step, we would start solving specifically for the technical interview by doing LeetCode or studying the technologies that come up in the interview process. We keep improving here until... Hooray, we got hired!
+
+<Img imageIndex={3}/>
+
+To reiterate, the point of this example is that getting hired involves going through a set of steps, and we need to pass all the steps to get hired somewhere. It’s ineffective to optimize for the steps that come easy to us, like focusing on the tech and avoiding the social stuff. Instead, you could look at the process as an engineer, identify the weakest link, and concentrate your efforts there.
+
+If you do this well, you will almost certainly get hired sooner or later.
+
+## Conclusion
+
+This is my very actionable understanding of the job-hunting process. If you are currently unemployed or looking to switch jobs and would like me to help you follow this process from start to finish. I can help you:
+
+- optimize your resume and social media accounts
+- plan and build portfolio projects, including teaching and technical decision-making
+- understand your values and the culture you’d like to work in
+- prepare for technical interviews
+
+Feel free to book a free 30-minute discovery call with me!
+
+<CTAButton theme="synthwave-500" />
