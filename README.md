@@ -1,42 +1,27 @@
-# Spotlight
+# itcoaching.dev
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+The website for my coaching business itcoaching.dev
 
-## Getting started
+## About itcoaching.dev
 
-To get started with this template, first install the npm dependencies:
+itcoaching.dev is a coaching, mentoring and teaching business aimed at helping web developers grow more quickly and find awesome jobs.
 
-```bash
-npm install
-```
+## What can you find on itcoaching.dev
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
+On the website you'll be able to find a few things that might be interesting to you.
 
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
+- [The Web Dev Rocket coaching program](https://www.itcoaching.dev/webdevrocket)
+- [Articles](https://www.itcoaching.dev/articles)
+- [About Stefan](https://www.itcoaching.dev/about)
 
-Next, run the development server:
+## Contact
 
-```bash
-npm run dev
-```
+If you'd like to get in touch with me about coaching, you can do so via the following channels:
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+- [Send me a DM on LinkedIn](https://www.linkedin.com/in/stefan-wullems-572854242/)
+- [Send me an email on stefan@itcoaching.dev](mailto:stefan@itcoaching.dev)
 
-## Customizing
+## Built using
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+This project is built using NextJS, TypeScript and TailwindCSS.
 
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
